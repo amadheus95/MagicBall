@@ -193,6 +193,8 @@
 		5E79755F1B8225E20003DDA1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = BEPiD;
 				TargetAttributes = {
@@ -489,6 +491,7 @@
 				5E7975951B8225E30003DDA1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5E7975961B8225E30003DDA1 /* Build configuration list for PBXNativeTarget "MagicBallTests" */ = {
 			isa = XCConfigurationList;
@@ -497,6 +500,7 @@
 				5E7975981B8225E30003DDA1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5E7975991B8225E30003DDA1 /* Build configuration list for PBXNativeTarget "MagicBallUITests" */ = {
 			isa = XCConfigurationList;
@@ -505,6 +509,7 @@
 				5E79759B1B8225E30003DDA1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
