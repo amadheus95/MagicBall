@@ -53,31 +53,29 @@ class GameViewController: UIViewController {
     }
     
     // fazendo a ação enquanto o celular se mexe
-    override func motionBegan(motion: UIEventSubtype, withEvent event: UIEvent?)
-    {
-        if motion == .MotionShake
-        {
-            scene.criarBolinha()
+    override func motionBegan(motion: UIEventSubtype, withEvent event: UIEvent?) {
+        if motion == .MotionShake {
             print("Comecou a façanha")
         }
     }
     
     // fazendo a ação quando o celular para
-    override func motionEnded(motion: UIEventSubtype, withEvent event: UIEvent?)
-    {
-        if motion == .MotionShake
-        {
+    override func motionEnded(motion: UIEventSubtype, withEvent event: UIEvent?) {
+        if motion == .MotionShake {
             scene.criarTextoScore()
             print("QUE FAÇANHA!")
             randomAnswer()
         }
     }
     
-    override func canBecomeFirstResponder() -> Bool
-    {
+    override func canBecomeFirstResponder() -> Bool {
         return true
     }
     
+    
+    
+    
+    //feito pelo eminem
     func randomAnswer() -> Void
     {
         let label = SKLabelNode()
