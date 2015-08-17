@@ -9,9 +9,14 @@
 import SpriteKit
 import UIKit
 
+@IBDesignable
+
 class GameScene: SKScene
 {
     //4dc4ff
+    
+//    var triangulo:    SKLabelNode?
+//    var triangulofFx: SKLabelNode?
     
     var RespostaLabel: SKLabelNode?
     var bolinha: SKSpriteNode?
@@ -38,7 +43,18 @@ class GameScene: SKScene
         addChild(bolinha!)
     }
     
-    func criarTextoScore(){
+    func mostrarTexto(){
+        //COLOCAR O TEXTO AQUI!
+        self.criarTexto()
+        RespostaLabel?.text = "Não bro"
+        addChild(RespostaLabel!)
+    }
+    
+    func retiraTexto(){
+        removeChildrenInArray([RespostaLabel!])
+    }
+    
+    func criarTexto(){
         RespostaLabel =  SKLabelNode()
         //RespostaLabel?.fontName = "Futura-Medium"
         RespostaLabel?.fontSize = 20;
@@ -46,12 +62,8 @@ class GameScene: SKScene
         RespostaLabel?.fontColor = SKColor.blackColor();
         RespostaLabel?.name = "Texto";
         RespostaLabel?.zPosition = 100;
-        RespostaLabel?.text = "Sim"
         
-        
-        
-        
-        addChild(RespostaLabel!)
+        //addChild(RespostaLabel!)
     }
     
     //    override func motionEnded(motion: UIEventSubtype, withEvent event: UIEvent?)
