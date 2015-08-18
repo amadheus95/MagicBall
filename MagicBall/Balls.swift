@@ -12,17 +12,29 @@ import SpriteKit
 
 class Balls: SKSpriteNode
 {
-    var imageBalls = SKNode()
+    var balls = SKNode()
     
-    func getBallName(ballNumber: Int) -> String
+    func getBallName(ballNumber: Int) -> String // funcão para retornar o nome das bolas
     {
         switch(ballNumber)
         {
             case 1:
-                return "8"
+                return "8ball"
             
             default:
                 return "Nada"
+        }
+    }
+    
+    func background(ballNumber: Int) -> UIColor // retornar o fundo de cada bola
+    {
+        switch(ballNumber)
+        {
+        case 1:
+            return UIColor.blueColor().eightBall
+            
+        default:
+            return UIColor.greenColor()
         }
     }
     

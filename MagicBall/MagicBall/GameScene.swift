@@ -21,9 +21,8 @@ class GameScene: SKScene
     var RespostaLabel: SKLabelNode?
     var bolinha: SKSpriteNode?
     
-    override func didMoveToView(view: SKView)
-    {
-        
+    override func didMoveToView(view: SKView){
+        self.criarBolinha()
     }
     
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
@@ -35,9 +34,8 @@ class GameScene: SKScene
         /* Called before each frame is rendered */
     }
     
-    func criarBolinha()
-    {
-        bolinha = SKSpriteNode(imageNamed: "Vermelho")
+    func criarBolinha() {
+        bolinha = SKSpriteNode(imageNamed: "8ball")
         bolinha?.xScale = 1
         bolinha?.yScale = 1
         bolinha?.position = CGPoint(x:CGRectGetMidX(self.frame), y:CGRectGetMidY(self.frame));
@@ -46,8 +44,18 @@ class GameScene: SKScene
         addChild(bolinha!)
     }
     
-    func criarTextoScore()
-    {
+    func mostrarTexto(){
+        //COLOCAR O TEXTO AQUI!
+        self.criarTexto()
+        RespostaLabel?.text = "Não bro"
+        addChild(RespostaLabel!)
+    }
+    
+    func retiraTexto(){
+        removeChildrenInArray([RespostaLabel!])
+    }
+    
+    func criarTexto(){
         RespostaLabel =  SKLabelNode()
         //RespostaLabel?.fontName = "Futura-Medium"
         RespostaLabel?.fontSize = 20;

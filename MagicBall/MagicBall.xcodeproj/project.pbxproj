@@ -17,6 +17,7 @@
 		5E7975841B8225E20003DDA1 /* MagicBallTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7975831B8225E20003DDA1 /* MagicBallTests.swift */; };
 		5E79758F1B8225E30003DDA1 /* MagicBallUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E79758E1B8225E30003DDA1 /* MagicBallUITests.swift */; };
 		794DA0451B83579300F67F03 /* Balls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794DA0441B83579300F67F03 /* Balls.swift */; };
+		794DA0471B835BDF00F67F03 /* BallColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794DA0461B835BDF00F67F03 /* BallColors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		5E79758E1B8225E30003DDA1 /* MagicBallUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicBallUITests.swift; sourceTree = "<group>"; };
 		5E7975901B8225E30003DDA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		794DA0441B83579300F67F03 /* Balls.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Balls.swift; path = ../Balls.swift; sourceTree = "<group>"; };
+		794DA0461B835BDF00F67F03 /* BallColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BallColors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				5E79756A1B8225E20003DDA1 /* AppDelegate.swift */,
 				5E79756C1B8225E20003DDA1 /* GameScene.sks */,
 				794DA0441B83579300F67F03 /* Balls.swift */,
+				794DA0461B835BDF00F67F03 /* BallColors.swift */,
 				5E79756E1B8225E20003DDA1 /* GameScene.swift */,
 				5E7975701B8225E20003DDA1 /* GameViewController.swift */,
 				5E7975721B8225E20003DDA1 /* Main.storyboard */,
@@ -270,6 +273,7 @@
 				794DA0451B83579300F67F03 /* Balls.swift in Sources */,
 				5E79756F1B8225E20003DDA1 /* GameScene.swift in Sources */,
 				5E7975711B8225E20003DDA1 /* GameViewController.swift in Sources */,
+				794DA0471B835BDF00F67F03 /* BallColors.swift in Sources */,
 				5E79756B1B8225E20003DDA1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
