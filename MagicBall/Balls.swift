@@ -20,6 +20,10 @@ class Balls: SKSpriteNode
         {
             case 1:
                 return "8ball"
+            case 2:
+                return "tennis"
+            case 3:
+                return "basket"
             
             default:
                 return "Nada"
