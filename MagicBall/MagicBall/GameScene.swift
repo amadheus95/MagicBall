@@ -35,12 +35,7 @@ class GameScene: SKScene
     }
     
     func criarBolinha() {
-        bolinha = SKSpriteNode(imageNamed: "8ball")
-        bolinha?.xScale = 1
-        bolinha?.yScale = 1
-        bolinha?.position = CGPoint(x:CGRectGetMidX(self.frame), y:CGRectGetMidY(self.frame));
-        bolinha?.name = "8ball"
-        //countDown?.text = "Esquerda"
+                //countDown?.text = "Esquerda"
         addChild(bolinha!)
     }
     
@@ -66,36 +61,5 @@ class GameScene: SKScene
         
         //addChild(RespostaLabel!)
     }
-    
-    //    override func motionEnded(motion: UIEventSubtype, withEvent event: UIEvent?)
-    //    {
-    //        let label = SKLabelNode()
-    //        var randomNumber = arc4random() % 4
-    //        randomNumber += 1
-    //
-    //        switch(randomNumber)
-    //        {
-    //            case 1:
-    //                label.text = "Resp 1"
-    //                break;
-    //
-    //            case 2:
-    //                label.text = "Resp 2"
-    //                break;
-    //
-    //            case 3:
-    //                label.text = "Resp 3"
-    //                break;
-    //
-    //            case 4:
-    //                label.text = "Resp 4"
-    //                break;
-    //
-    //            default:
-    //                label.text = "Default"
-    //                break;
-    //        }
-    //    }
-    
     
 }
