@@ -14,7 +14,7 @@ class Balls: SKSpriteNode
 {
     var balls: SKSpriteNode?
     
-    func getBallName(ballNumber: Int) -> String // funcão para retornar o nome das bolas
+    func getBallName(ballNumber: Int) -> String  // funcão para retornar o nome das bolas
     {
         switch(ballNumber)
         {
