@@ -16,6 +16,7 @@
 		5E7975791B8225E20003DDA1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E7975771B8225E20003DDA1 /* LaunchScreen.storyboard */; };
 		5E7975841B8225E20003DDA1 /* MagicBallTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7975831B8225E20003DDA1 /* MagicBallTests.swift */; };
 		5E79758F1B8225E30003DDA1 /* MagicBallUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E79758E1B8225E30003DDA1 /* MagicBallUITests.swift */; };
+		794DA0451B83579300F67F03 /* Balls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794DA0441B83579300F67F03 /* Balls.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		5E79758A1B8225E30003DDA1 /* MagicBallUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MagicBallUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E79758E1B8225E30003DDA1 /* MagicBallUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicBallUITests.swift; sourceTree = "<group>"; };
 		5E7975901B8225E30003DDA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		794DA0441B83579300F67F03 /* Balls.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Balls.swift; path = ../Balls.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 			children = (
 				5E79756A1B8225E20003DDA1 /* AppDelegate.swift */,
 				5E79756C1B8225E20003DDA1 /* GameScene.sks */,
+				794DA0441B83579300F67F03 /* Balls.swift */,
 				5E79756E1B8225E20003DDA1 /* GameScene.swift */,
 				5E7975701B8225E20003DDA1 /* GameViewController.swift */,
 				5E7975721B8225E20003DDA1 /* Main.storyboard */,
@@ -264,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				794DA0451B83579300F67F03 /* Balls.swift in Sources */,
 				5E79756F1B8225E20003DDA1 /* GameScene.swift in Sources */,
 				5E7975711B8225E20003DDA1 /* GameViewController.swift in Sources */,
 				5E79756B1B8225E20003DDA1 /* AppDelegate.swift in Sources */,

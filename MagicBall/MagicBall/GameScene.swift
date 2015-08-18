@@ -17,17 +17,20 @@ class GameScene: SKScene
     
     override func didMoveToView(view: SKView)
     {
+        
     }
     
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?)
     {
     }
     
-    override func update(currentTime: CFTimeInterval) {
+    override func update(currentTime: CFTimeInterval)
+    {
         /* Called before each frame is rendered */
     }
     
-    func criarBolinha(){
+    func criarBolinha()
+    {
         bolinha = SKSpriteNode(imageNamed: "Vermelho")
         bolinha?.xScale = 1
         bolinha?.yScale = 1
@@ -37,7 +40,8 @@ class GameScene: SKScene
         addChild(bolinha!)
     }
     
-    func criarTextoScore(){
+    func criarTextoScore()
+    {
         RespostaLabel =  SKLabelNode()
         RespostaLabel?.fontName = "Futura-Medium"
         RespostaLabel?.fontSize = 20;
