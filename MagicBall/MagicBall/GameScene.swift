@@ -13,19 +13,14 @@ import UIKit
 
 class GameScene: SKScene
 {
-    //4dc4ff
-    
-//    var triangulo:    SKLabelNode?
-//    var triangulofFx: SKLabelNode?
+    var TextoCriado: Bool?
     
     var RespostaLabel: SKLabelNode?
     var balls: SKSpriteNode?
     
     override func didMoveToView(view: SKView) {
+        TextoCriado = false
         self.criarBolinha()
-        
-        
-        
     }
     
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
@@ -46,14 +41,27 @@ class GameScene: SKScene
         balls!.position = CGPoint(x:CGRectGetMidX(self.frame), y:CGRectGetMidY(self.frame));
         balls!.name = ball.getBallName(1)
         
+        backgroundColor = ball.background(1)
+        
         addChild(balls!) // adicionando o objeto a cena
     }
     
     func mostrarTexto() {
         //COLOCAR O TEXTO AQUI!
-        self.criarTexto()
-        RespostaLabel?.text = "Não bro"
-        addChild(RespostaLabel!)
+        if TextoCriado == false{
+            self.criarTexto()
+            TextoCriado = true
+            addChild(RespostaLabel!)
+        }
+        let Ball = Balls()
+        let MaxRespostas = Ball.getMaxRespostas(1)
+        
+        let RamdomInstance = Random()
+        let NumeroAleatorio = RamdomInstance.randomInt(1, max: MaxRespostas)
+        
+        RespostaLabel?.text = Ball.getResposta(NumeroAleatorio, ballNumber: 1)
+        print(RespostaLabel!.text)
+        
     }
     
     func retiraTexto(){
@@ -65,7 +73,7 @@ class GameScene: SKScene
         //RespostaLabel?.fontName = "Futura-Medium"
         RespostaLabel?.fontSize = 20;
         RespostaLabel?.position = CGPoint(x:CGRectGetMidX(self.frame), y:CGRectGetMidY(self.frame))
-        RespostaLabel?.fontColor = SKColor.blackColor();
+        RespostaLabel?.fontColor = SKColor.whiteColor();
         RespostaLabel?.name = "Texto";
         RespostaLabel?.zPosition = 100;
         

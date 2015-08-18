@@ -41,4 +41,30 @@ class Balls: SKSpriteNode
             return UIColor.greenColor()
         }
     }
+    
+    func getResposta(value: Int, ballNumber: Int) -> String{
+        switch ballNumber{
+        case 1:
+            let Resposta = Respostas8Ball()
+            return Resposta.getRespostas(value)
+        case 2:
+            let Resposta = RespostasTennis()
+            return Resposta.getRespostas(value)
+        default:
+            return "Deu merda"
+        }
+    }
+    
+    func getMaxRespostas(ballNumber: Int) -> Int{
+        switch ballNumber{
+        case 1:
+            let Resposta = Respostas8Ball()
+            return Resposta.getNumeroMaximodeRespostas()
+        case 2:
+            let Resposta = RespostasTennis()
+            return Resposta.getNumeroMaximodeRespostas()
+        default:
+            return 1
+        }
+    }
 }
