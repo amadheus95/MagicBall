@@ -19,10 +19,13 @@ class GameScene: SKScene
 //    var triangulofFx: SKLabelNode?
     
     var RespostaLabel: SKLabelNode?
-    var bolinha: SKSpriteNode?
+    var balls: SKSpriteNode?
     
     override func didMoveToView(view: SKView) {
         self.criarBolinha()
+        
+        
+        
     }
     
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
@@ -36,8 +39,14 @@ class GameScene: SKScene
     
     func criarBolinha() {
         let ball = Balls()
-        bolinha = ball.balls(1)
-        addChild(bolinha!)
+        
+        balls = SKSpriteNode(imageNamed: ball.getBallName(1)) // chama a função do nome das bolas
+        balls!.xScale = 1
+        balls!.yScale = 1
+        balls!.position = CGPoint(x:CGRectGetMidX(self.frame), y:CGRectGetMidY(self.frame));
+        balls!.name = ball.getBallName(1)
+        
+        addChild(balls!) // adicionando o objeto a cena
     }
     
     func mostrarTexto() {

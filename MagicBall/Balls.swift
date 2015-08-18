@@ -37,19 +37,4 @@ class Balls: SKSpriteNode
             return UIColor.greenColor()
         }
     }
-    
-    func balls(ballNumber: Int) -> SKSpriteNode // função para criar as bolas
-    {
-        balls = SKSpriteNode(imageNamed: getBallName(ballNumber)) // chama a função do nome das bolas
-        balls!.xScale = 1
-        balls!.yScale = 1
-        balls!.position = CGPoint(x:CGRectGetMidX(self.frame), y:CGRectGetMidY(self.frame));
-        balls!.name = getBallName(ballNumber)
-        
-        return balls!
-
-    }
-    
-    
-    
 }
