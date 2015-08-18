@@ -2,11 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "triangulo.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "triangulo.png",
       "scale" : "2x"
     },
     {
