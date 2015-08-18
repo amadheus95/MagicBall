@@ -21,7 +21,7 @@ class GameScene: SKScene
     var RespostaLabel: SKLabelNode?
     var bolinha: SKSpriteNode?
     
-    override func didMoveToView(view: SKView){
+    override func didMoveToView(view: SKView) {
         self.criarBolinha()
     }
     
@@ -35,11 +35,12 @@ class GameScene: SKScene
     }
     
     func criarBolinha() {
-                //countDown?.text = "Esquerda"
+        let ball = Balls()
+        bolinha = ball.balls(1)
         addChild(bolinha!)
     }
     
-    func mostrarTexto(){
+    func mostrarTexto() {
         //COLOCAR O TEXTO AQUI!
         self.criarTexto()
         RespostaLabel?.text = "Não bro"
