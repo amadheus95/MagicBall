@@ -9,8 +9,14 @@
 import SpriteKit
 import UIKit
 
+@IBDesignable
+
 class GameScene: SKScene
 {
+    //4dc4ff
+    
+//    var triangulo:    SKLabelNode?
+//    var triangulofFx: SKLabelNode?
     
     var RespostaLabel: SKLabelNode?
     var bolinha: SKSpriteNode?
@@ -20,8 +26,8 @@ class GameScene: SKScene
         
     }
     
-    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?)
-    {
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        
     }
     
     override func update(currentTime: CFTimeInterval)
@@ -35,7 +41,7 @@ class GameScene: SKScene
         bolinha?.xScale = 1
         bolinha?.yScale = 1
         bolinha?.position = CGPoint(x:CGRectGetMidX(self.frame), y:CGRectGetMidY(self.frame));
-        bolinha?.name = "Vermelho"
+        bolinha?.name = "8ball"
         //countDown?.text = "Esquerda"
         addChild(bolinha!)
     }
@@ -43,15 +49,14 @@ class GameScene: SKScene
     func criarTextoScore()
     {
         RespostaLabel =  SKLabelNode()
-        RespostaLabel?.fontName = "Futura-Medium"
+        //RespostaLabel?.fontName = "Futura-Medium"
         RespostaLabel?.fontSize = 20;
         RespostaLabel?.position = CGPoint(x:CGRectGetMidX(self.frame), y:CGRectGetMidY(self.frame))
         RespostaLabel?.fontColor = SKColor.blackColor();
         RespostaLabel?.name = "Texto";
         RespostaLabel?.zPosition = 100;
-        RespostaLabel?.text = "Sim"
         
-        addChild(RespostaLabel!)
+        //addChild(RespostaLabel!)
     }
     
     //    override func motionEnded(motion: UIEventSubtype, withEvent event: UIEvent?)

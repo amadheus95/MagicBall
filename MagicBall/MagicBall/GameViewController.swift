@@ -9,6 +9,8 @@
 import UIKit
 import SpriteKit
 
+@IBDesignable
+
 class GameViewController: UIViewController {
     var scene = GameScene()
     
@@ -53,31 +55,30 @@ class GameViewController: UIViewController {
     }
     
     // fazendo a ação enquanto o celular se mexe
-    override func motionBegan(motion: UIEventSubtype, withEvent event: UIEvent?)
-    {
-        if motion == .MotionShake
-        {
-            scene.criarBolinha()
-            print("Comecou a façanha")
+    override func motionBegan(motion: UIEventSubtype, withEvent event: UIEvent?) {
+        if motion == .MotionShake {
+            //scene.retiraTexto()
+            print("little slow juice")
         }
     }
     
     // fazendo a ação quando o celular para
-    override func motionEnded(motion: UIEventSubtype, withEvent event: UIEvent?)
-    {
-        if motion == .MotionShake
-        {
-            scene.criarTextoScore()
-            print("QUE FAÇANHA!")
-            randomAnswer()
+    override func motionEnded(motion: UIEventSubtype, withEvent event: UIEvent?) {
+        if motion == .MotionShake {
+            scene.mostrarTexto()
+            print("Of milk!")
+            //randomAnswer()
         }
     }
     
-    override func canBecomeFirstResponder() -> Bool
-    {
+    override func canBecomeFirstResponder() -> Bool {
         return true
     }
     
+    
+    
+    
+    //feito pelo eminem
     func randomAnswer() -> Void
     {
         let label = SKLabelNode()
