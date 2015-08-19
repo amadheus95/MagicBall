@@ -21,6 +21,7 @@
 		5EDD1E161B83CE720096A780 /* Respostas8Ball.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDD1E151B83CE720096A780 /* Respostas8Ball.swift */; };
 		5EDD1E191B83D0590096A780 /* RespostasTennis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDD1E181B83D0590096A780 /* RespostasTennis.swift */; };
 		5EDD1E1B1B83D24E0096A780 /* Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDD1E1A1B83D24E0096A780 /* Random.swift */; };
+		794D60871B84D62D00AACB2A /* MagicBall.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 794D60851B84D62D00AACB2A /* MagicBall.xcdatamodeld */; };
 		794DA0451B83579300F67F03 /* Balls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794DA0441B83579300F67F03 /* Balls.swift */; };
 		794DA0471B835BDF00F67F03 /* BallColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794DA0461B835BDF00F67F03 /* BallColors.swift */; };
 		79A3DC3C1B842C1F007D0EDA /* BasketballAnswers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A3DC3B1B842C1F007D0EDA /* BasketballAnswers.swift */; };
@@ -64,6 +65,7 @@
 		5EDD1E151B83CE720096A780 /* Respostas8Ball.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Respostas8Ball.swift; sourceTree = "<group>"; };
 		5EDD1E181B83D0590096A780 /* RespostasTennis.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RespostasTennis.swift; sourceTree = "<group>"; };
 		5EDD1E1A1B83D24E0096A780 /* Random.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Random.swift; sourceTree = "<group>"; };
+		794D60861B84D62D00AACB2A /* MagicBall.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MagicBall.xcdatamodel; sourceTree = "<group>"; };
 		794DA0441B83579300F67F03 /* Balls.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Balls.swift; path = ../Balls.swift; sourceTree = "<group>"; };
 		794DA0461B835BDF00F67F03 /* BallColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BallColors.swift; sourceTree = "<group>"; };
 		79A3DC3B1B842C1F007D0EDA /* BasketballAnswers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasketballAnswers.swift; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 		5E7975691B8225E20003DDA1 /* MagicBall */ = {
 			isa = PBXGroup;
 			children = (
+				794D60881B84D63C00AACB2A /* Model */,
 				5E79756A1B8225E20003DDA1 /* AppDelegate.swift */,
 				5E79756E1B8225E20003DDA1 /* GameScene.swift */,
 				5E79756C1B8225E20003DDA1 /* GameScene.sks */,
@@ -169,6 +172,14 @@
 				794DA0461B835BDF00F67F03 /* BallColors.swift */,
 			);
 			name = Utilitarios;
+			sourceTree = "<group>";
+		};
+		794D60881B84D63C00AACB2A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				794D60851B84D62D00AACB2A /* MagicBall.xcdatamodeld */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -310,6 +321,7 @@
 				5E231F741B84D20100A83447 /* Glass.swift in Sources */,
 				5E7975711B8225E20003DDA1 /* GameViewController.swift in Sources */,
 				794DA0471B835BDF00F67F03 /* BallColors.swift in Sources */,
+				794D60871B84D62D00AACB2A /* MagicBall.xcdatamodeld in Sources */,
 				5EDD1E161B83CE720096A780 /* Respostas8Ball.swift in Sources */,
 				5EDD1E191B83D0590096A780 /* RespostasTennis.swift in Sources */,
 				5EDD1E141B83C2570096A780 /* RespostasGenericas.swift in Sources */,
@@ -562,6 +574,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		794D60851B84D62D00AACB2A /* MagicBall.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				794D60861B84D62D00AACB2A /* MagicBall.xcdatamodel */,
+			);
+			currentVersion = 794D60861B84D62D00AACB2A /* MagicBall.xcdatamodel */;
+			path = MagicBall.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 5E79755F1B8225E20003DDA1 /* Project object */;
 }
