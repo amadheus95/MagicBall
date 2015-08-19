@@ -13,14 +13,19 @@ import UIKit
 
 class GameScene: SKScene
 {
-    var text: Bool?
+    var text        : Bool?
     
+    var answerBox   : SKSpriteNode?
+    var answerBoxFx : SKSpriteNode?
     var labelAnswers: SKLabelNode?
-    var balls: SKSpriteNode?
+    var glass       : SKSpriteNode?
+    var balls       : SKSpriteNode?
     
     override func didMoveToView(view: SKView) {
         text = false
         self.createBall()
+        self.createGlass()
+        //self.createTriangle()
     }
     
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
@@ -35,15 +40,25 @@ class GameScene: SKScene
     func createBall() {
         let ball = Balls()
         
-        balls = SKSpriteNode(imageNamed: ball.getBallName(2)) // chama a função do nome das bolas
-        balls!.xScale = 1
-        balls!.yScale = 1
+        balls = SKSpriteNode(imageNamed: ball.getBallName(1)) // chama a função do nome das bolas=
         balls!.position = CGPoint(x:CGRectGetMidX(self.frame), y:CGRectGetMidY(self.frame));
-        balls!.name = ball.getBallName(2)
+        balls!.name = ball.getBallName(1)
+        balls!.zPosition = 90
         
         backgroundColor = ball.background(1)
         
         addChild(balls!) // adicionando o objeto a cena
+    }
+    
+    func createGlass(){
+        let glassInstance = Glass()
+        
+        glass = SKSpriteNode(imageNamed: glassInstance.getGlassName(1))
+        glass!.position = CGPoint(x:CGRectGetMidX(self.frame), y:CGRectGetMidY(self.frame));
+        glass!.name = glassInstance.getGlassName(1)
+        glass!.zPosition = 97
+        
+        addChild(glass!)
     }
     
     func mostrarTexto() {
@@ -66,6 +81,26 @@ class GameScene: SKScene
     
     func removeText(){
         removeChildrenInArray([labelAnswers!])
+    }
+    
+    func createTriangle(){
+        let boxInstance = Glass()
+        
+        answerBox = SKSpriteNode(imageNamed: boxInstance.getTriangleName(1))
+        answerBox!.position = CGPoint(x: CGRectGetMidX(self.frame), y: CGRectGetMidY(self.frame))
+        answerBox!.name = boxInstance.getTriangleName(1)
+        answerBox!.zPosition = 99
+        
+        addChild(answerBox!)
+        
+        
+        answerBoxFx = SKSpriteNode(imageNamed: boxInstance.getTriangleName(1)+"fx")
+        answerBoxFx!.position = CGPoint(x: CGRectGetMidX(self.frame), y: CGRectGetMidY(self.frame))
+        answerBoxFx!.name = boxInstance.getTriangleName(1)+"fx"
+        answerBoxFx!.zPosition = 98
+        
+        addChild(answerBoxFx!)
+        
     }
     
     func createText(){
