@@ -17,5 +17,4 @@ extension MagicBall
     @NSManaged var ballNumber: NSNumber?
     @NSManaged var arrayBalls: NSNumber?
     @NSManaged var coins: NSNumber?
-
 }

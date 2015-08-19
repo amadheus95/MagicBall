@@ -14,7 +14,6 @@ import UIKit
 class GameScene: SKScene
 {
     var text        : Bool?
-    
     var answerBox   : SKSpriteNode?
     var answerBoxFx : SKSpriteNode?
     var labelAnswers: SKLabelNode?
