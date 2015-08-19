@@ -42,6 +42,7 @@ class Balls: SKSpriteNode
         }
     }
     
+    // função para retornar as respostas de cada classe
     func getResposta(value: Int, ballNumber: Int) -> String{
         switch ballNumber{
         case 1:
@@ -50,11 +51,15 @@ class Balls: SKSpriteNode
         case 2:
             let Resposta = RespostasTennis()
             return Resposta.getRespostas(value)
+        case 3:
+            let answer = BasketballAnswers()
+            return answer.getAnswers(value)
         default:
             return "Deu merda"
         }
     }
     
+    // função para retornar o número máximo de respostas de cada classe
     func getMaxRespostas(ballNumber: Int) -> Int{
         switch ballNumber{
         case 1:
@@ -63,6 +68,9 @@ class Balls: SKSpriteNode
         case 2:
             let Resposta = RespostasTennis()
             return Resposta.getNumeroMaximodeRespostas()
+        case 3:
+            let answer = BasketballAnswers()
+            return answer.getMaximumAnswerNumbers()
         default:
             return 1
         }

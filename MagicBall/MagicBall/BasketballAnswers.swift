@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class Basketball
+class BasketballAnswers
 {
     func getAnswers(value: Int) -> String // função para retornar perguntas relacionadas ao basquete
     {
