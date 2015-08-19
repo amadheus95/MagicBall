@@ -35,11 +35,11 @@ class GameScene: SKScene
     func createBall() {
         let ball = Balls()
         
-        balls = SKSpriteNode(imageNamed: ball.getBallName(1)) // chama a função do nome das bolas
+        balls = SKSpriteNode(imageNamed: ball.getBallName(2)) // chama a função do nome das bolas
         balls!.xScale = 1
         balls!.yScale = 1
         balls!.position = CGPoint(x:CGRectGetMidX(self.frame), y:CGRectGetMidY(self.frame));
-        balls!.name = ball.getBallName(1)
+        balls!.name = ball.getBallName(2)
         
         backgroundColor = ball.background(1)
         
