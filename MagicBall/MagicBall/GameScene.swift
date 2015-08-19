@@ -13,14 +13,14 @@ import UIKit
 
 class GameScene: SKScene
 {
-    var TextoCriado: Bool?
+    var text: Bool?
     
-    var RespostaLabel: SKLabelNode?
+    var labelAnswers: SKLabelNode?
     var balls: SKSpriteNode?
     
     override func didMoveToView(view: SKView) {
-        TextoCriado = false
-        self.criarBolinha()
+        text = false
+        self.createBall()
     }
     
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
@@ -32,7 +32,7 @@ class GameScene: SKScene
         /* Called before each frame is rendered */
     }
     
-    func criarBolinha() {
+    func createBall() {
         let ball = Balls()
         
         balls = SKSpriteNode(imageNamed: ball.getBallName(1)) // chama a função do nome das bolas
@@ -48,34 +48,34 @@ class GameScene: SKScene
     
     func mostrarTexto() {
         //COLOCAR O TEXTO AQUI!
-        if TextoCriado == false{
-            self.criarTexto()
-            TextoCriado = true
-            addChild(RespostaLabel!)
+        if text == false{
+            self.createText()
+            text = true
+            addChild(labelAnswers!)
         }
         let Ball = Balls()
         let MaxRespostas = Ball.getMaxRespostas(1)
         
-        let RamdomInstance = Random()
-        let NumeroAleatorio = RamdomInstance.randomInt(1, max: MaxRespostas)
+        let ramdomInstance = Random()
+        let randomNumber = ramdomInstance.randomInt(1, max: MaxRespostas)
         
-        RespostaLabel?.text = Ball.getResposta(NumeroAleatorio, ballNumber: 1)
-        print(RespostaLabel!.text)
+        labelAnswers?.text = Ball.getResposta(randomNumber, ballNumber: 1)
+        print(labelAnswers!.text)
         
     }
     
-    func retiraTexto(){
-        removeChildrenInArray([RespostaLabel!])
+    func removeText(){
+        removeChildrenInArray([labelAnswers!])
     }
     
-    func criarTexto(){
-        RespostaLabel =  SKLabelNode()
+    func createText(){
+        labelAnswers =  SKLabelNode()
         //RespostaLabel?.fontName = "Futura-Medium"
-        RespostaLabel?.fontSize = 20;
-        RespostaLabel?.position = CGPoint(x:CGRectGetMidX(self.frame), y:CGRectGetMidY(self.frame))
-        RespostaLabel?.fontColor = SKColor.whiteColor();
-        RespostaLabel?.name = "Texto";
-        RespostaLabel?.zPosition = 100;
+        labelAnswers?.fontSize = 20;
+        labelAnswers?.position = CGPoint(x:CGRectGetMidX(self.frame), y:CGRectGetMidY(self.frame))
+        labelAnswers?.fontColor = SKColor.whiteColor();
+        labelAnswers?.name = "Texto";
+        labelAnswers?.zPosition = 100;
         
         //addChild(RespostaLabel!)
     }
