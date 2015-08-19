@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="8175.2" systemVersion="14F27" minimumToolsVersion="Xcode 7.0">
-    <entity name="MagicBall" syncable="YES">
+    <entity name="MagicBall" representedClassName=".MagicBall" syncable="YES">
         <attribute name="arrayBalls" optional="YES" attributeType="Boolean" defaultValueString="0" syncable="YES"/>
         <attribute name="ballNumber" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="coins" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
