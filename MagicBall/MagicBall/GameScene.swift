@@ -29,6 +29,26 @@ class GameScene: SKScene
     }
     
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        var touch = UITouch()
+        touch = touches.first!
+        var location = CGPoint()
+        location = touch.locationInNode(self)
+        var node = SKNode()
+        node = nodeAtPoint(location)
+        
+        if (node.name == "ballsButton"){
+            let scene = ChooseBall()
+            // Configure the view.
+            let skView = view
+            
+            /* Sprite Kit applies additional optimizations to improve rendering performance */
+            skView!.ignoresSiblingOrder = true
+            
+            /* Set the scale mode to scale to fit the window */
+            scene.scaleMode = .AspectFill
+            
+            skView!.presentScene(scene)
+        }
         
     }
     
@@ -114,9 +134,9 @@ class GameScene: SKScene
     
     func createButton() {
         ballsButton = SKSpriteNode(imageNamed: "8ballIcon")
-        ballsButton!.position = CGPoint(x: CGRectGetMaxX(self.frame)-20, y: CGRectGetMaxY(self.frame))
+        ballsButton!.position = CGPoint(x: CGRectGetMidX(self.frame), y: CGRectGetMaxY(self.frame))
         ballsButton!.name = "ballsButton"
-        ballsButton!.zPosition = 98
+        ballsButton!.zPosition = 908
         
         addChild(ballsButton!)
     }
