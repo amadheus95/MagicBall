@@ -29,9 +29,13 @@ class BallTypes {
         self.ballType = ballType
     }
     
-//    var spriteName: String
-//    {
-//        let spriteNames = ["bas"
-//        
-//    }
+    var spriteName: String
+    {
+        let balls = Balls()
+        let spriteNames = balls.getTotalBalls()
+        print("testando o retorno\(spriteNames)")
+        return spriteNames as! String
+        
+    }
+
 }

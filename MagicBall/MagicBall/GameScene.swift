@@ -25,7 +25,10 @@ class GameScene: SKScene
         self.createBall()
         self.createGlass()
         self.createButtonBall()
+        self.createButtonCoin()
         let x = Balls()
+        
+        
         
         x.getTotalBalls()        //self.createTriangle()
     }
@@ -50,6 +53,8 @@ class GameScene: SKScene
             scene.scaleMode = .AspectFill
             
             skView!.presentScene(scene)
+        } else if (node.name == "coin") {
+            print("CLICOU NO BOTAO DA COIN")
         }
         
     }
@@ -136,8 +141,17 @@ class GameScene: SKScene
     
     func createButtonBall() {
         ballsButton = SKSpriteNode(imageNamed: "8ballIcon")
-        ballsButton!.position = CGPoint(x: CGRectGetMidX(self.frame), y: CGRectGetMaxY(self.frame))
+        ballsButton!.position = CGPoint(x: CGRectGetMidX(self.frame)*1.25, y: CGRectGetMaxY(self.frame) - ballsButton!.frame.height + 5)
         ballsButton!.name = "ballsButton"
+        ballsButton!.zPosition = 908
+        
+        addChild(ballsButton!)
+    }
+    
+    func createButtonCoin() {
+        ballsButton = SKSpriteNode(imageNamed: "coin")
+        ballsButton!.position = CGPoint(x: CGRectGetMidX(self.frame)*1.35, y: CGRectGetMaxY(self.frame) - ballsButton!.frame.height + 5)
+        ballsButton!.name = "coin"
         ballsButton!.zPosition = 908
         
         addChild(ballsButton!)
