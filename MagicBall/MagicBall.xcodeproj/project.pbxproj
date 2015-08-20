@@ -24,6 +24,7 @@
 		794D60871B84D62D00AACB2A /* MagicBall.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 794D60851B84D62D00AACB2A /* MagicBall.xcdatamodeld */; };
 		794D608B1B84D7A500AACB2A /* MagicBall+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794D60891B84D7A500AACB2A /* MagicBall+CoreDataProperties.swift */; };
 		794D608C1B84D7A500AACB2A /* MagicBall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794D608A1B84D7A500AACB2A /* MagicBall.swift */; };
+		794D60971B860CB000AACB2A /* ChooseBall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794D60961B860CB000AACB2A /* ChooseBall.swift */; };
 		794DA0451B83579300F67F03 /* Balls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794DA0441B83579300F67F03 /* Balls.swift */; };
 		794DA0471B835BDF00F67F03 /* BallColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794DA0461B835BDF00F67F03 /* BallColors.swift */; };
 		79A3DC3C1B842C1F007D0EDA /* BasketballAnswers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A3DC3B1B842C1F007D0EDA /* BasketballAnswers.swift */; };
@@ -70,6 +71,7 @@
 		794D60861B84D62D00AACB2A /* MagicBall.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MagicBall.xcdatamodel; sourceTree = "<group>"; };
 		794D60891B84D7A500AACB2A /* MagicBall+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MagicBall+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		794D608A1B84D7A500AACB2A /* MagicBall.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagicBall.swift; sourceTree = "<group>"; };
+		794D60961B860CB000AACB2A /* ChooseBall.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseBall.swift; sourceTree = "<group>"; };
 		794DA0441B83579300F67F03 /* Balls.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Balls.swift; path = ../Balls.swift; sourceTree = "<group>"; };
 		794DA0461B835BDF00F67F03 /* BallColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BallColors.swift; sourceTree = "<group>"; };
 		79A3DC3B1B842C1F007D0EDA /* BasketballAnswers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasketballAnswers.swift; sourceTree = "<group>"; };
@@ -126,7 +128,8 @@
 				5E79756A1B8225E20003DDA1 /* AppDelegate.swift */,
 				5E79756E1B8225E20003DDA1 /* GameScene.swift */,
 				5E79756C1B8225E20003DDA1 /* GameScene.sks */,
-				5E7975701B8225E20003DDA1 /* GameViewController.swift */,
+				794D60961B860CB000AACB2A /* ChooseBall.swift */,
+				794D60911B86081E00AACB2A /* Controller */,
 				794D60881B84D63C00AACB2A /* Model */,
 				5EDD1E1C1B83D2750096A780 /* Utilitarios */,
 				5EDD1E171B83D03B0096A780 /* Respostas */,
@@ -186,6 +189,14 @@
 				794D608A1B84D7A500AACB2A /* MagicBall.swift */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		794D60911B86081E00AACB2A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5E7975701B8225E20003DDA1 /* GameViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -321,6 +332,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				794D60971B860CB000AACB2A /* ChooseBall.swift in Sources */,
 				794D608B1B84D7A500AACB2A /* MagicBall+CoreDataProperties.swift in Sources */,
 				794DA0451B83579300F67F03 /* Balls.swift in Sources */,
 				794D608C1B84D7A500AACB2A /* MagicBall.swift in Sources */,

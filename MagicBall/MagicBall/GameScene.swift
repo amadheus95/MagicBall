@@ -9,8 +9,6 @@
 import SpriteKit
 import UIKit
 
-@IBDesignable
-
 class GameScene: SKScene
 {
     var text        : Bool?
@@ -19,6 +17,8 @@ class GameScene: SKScene
     var labelAnswers: SKLabelNode?
     var glass       : SKSpriteNode?
     var balls       : SKSpriteNode?
+    
+    var ballsButton : SKSpriteNode?
     
     override func didMoveToView(view: SKView) {
         text = false
@@ -104,14 +104,15 @@ class GameScene: SKScene
     
     func createText(){
         labelAnswers =  SKLabelNode()
-        //RespostaLabel?.fontName = "Futura-Medium"
         labelAnswers?.fontSize = 20;
         labelAnswers?.position = CGPoint(x:CGRectGetMidX(self.frame), y:CGRectGetMidY(self.frame))
         labelAnswers?.fontColor = SKColor.whiteColor();
         labelAnswers?.name = "Texto";
         labelAnswers?.zPosition = 100;
-        
-        //addChild(RespostaLabel!)
+    }
+    
+    func createButton(){
+        ballsButton = SKSpriteNode(imageNamed: "8BallIcon")
     }
     
 }
