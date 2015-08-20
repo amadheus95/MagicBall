@@ -26,11 +26,11 @@ class GameScene: SKScene
         self.createGlass()
         self.createButtonBall()
         self.createButtonCoin()
+        
         let x = Balls()
+        x.getTotalBalls()
         
-        
-        
-        x.getTotalBalls()        //self.createTriangle()
+        self.createTriangle()
     }
     
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
@@ -126,15 +126,17 @@ class GameScene: SKScene
         let boxInstance = Glass()
         
         answerBox = SKSpriteNode(imageNamed: boxInstance.getTriangleName(1))
-        answerBox!.position = CGPoint(x: CGRectGetMidX(self.frame), y: CGRectGetMidY(self.frame))
+        answerBox!.position = CGPoint(x:CGRectGetMidX(self.frame), y:CGRectGetMidY(self.frame)-40);
         answerBox!.name = boxInstance.getTriangleName(1)
         answerBox!.zPosition = 99
+        
+        //answerBox!.physicsBody = SKPhysicsBody(circleOfRadius: answerBox!.frame.height/2)
         
         addChild(answerBox!)
         
         
         answerBoxFx = SKSpriteNode(imageNamed: boxInstance.getTriangleName(1)+"fx")
-        answerBoxFx!.position = CGPoint(x: CGRectGetMidX(self.frame), y: CGRectGetMidY(self.frame))
+        answerBoxFx!.position = CGPoint(x:CGRectGetMidX(self.frame), y:CGRectGetMidY(self.frame)-40);
         answerBoxFx!.name = boxInstance.getTriangleName(1)+"fx"
         answerBoxFx!.zPosition = 98
         
@@ -144,8 +146,9 @@ class GameScene: SKScene
     
     func createText(){
         labelAnswers =  SKLabelNode()
-        labelAnswers?.fontSize = 20;
-        labelAnswers?.position = CGPoint(x:CGRectGetMidX(self.frame), y:CGRectGetMidY(self.frame))
+        labelAnswers?.fontName = "Helvetica"
+        labelAnswers?.fontSize = 17;
+        labelAnswers?.position = CGPoint(x:CGRectGetMidX(self.frame), y:CGRectGetMidY(self.frame)-40);
         labelAnswers?.fontColor = SKColor.whiteColor();
         labelAnswers?.name = "Texto";
         labelAnswers?.zPosition = 100;
