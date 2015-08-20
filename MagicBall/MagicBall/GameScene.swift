@@ -24,8 +24,10 @@ class GameScene: SKScene
         text = false
         self.createBall()
         self.createGlass()
-        self.createButton()
-        //self.createTriangle()
+        self.createButtonBall()
+        let x = Balls()
+        
+        x.getTotalBalls()        //self.createTriangle()
     }
     
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
@@ -132,7 +134,7 @@ class GameScene: SKScene
         labelAnswers?.zPosition = 100;
     }
     
-    func createButton() {
+    func createButtonBall() {
         ballsButton = SKSpriteNode(imageNamed: "8ballIcon")
         ballsButton!.position = CGPoint(x: CGRectGetMidX(self.frame), y: CGRectGetMaxY(self.frame))
         ballsButton!.name = "ballsButton"

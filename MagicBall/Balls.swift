@@ -26,7 +26,7 @@ class Balls: SKSpriteNode
                 return "basket"
             
             default:
-                return "Nada"
+                return "nada"
         }
     }
     
@@ -74,5 +74,20 @@ class Balls: SKSpriteNode
         default:
             return 1
         }
+    }
+    
+    func getTotalBalls() -> [String]
+    {
+        var names = [String]() // nome das bolas
+        var i: Int
+        
+        // loop para pegar o nome de cada bola da magia
+        for i = 1; self.getBallName(i) != "nada"; i++
+        {
+            names.append(self.getBallName(i))
+            print(names[i - 1])
+        }
+        
+        return names
     }
 }
