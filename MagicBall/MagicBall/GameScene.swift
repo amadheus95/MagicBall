@@ -97,6 +97,8 @@ class GameScene: SKScene
         glass!.name = glassInstance.getGlassName(1)
         glass!.zPosition = 97
         
+        let physic = Physics()
+        glass!.physicsBody = physic.getGlass(1, withSize: glass!.frame.height)
         addChild(glass!)
     }
     
@@ -130,14 +132,15 @@ class GameScene: SKScene
         answerBox!.name = boxInstance.getTriangleName(1)
         answerBox!.zPosition = 99
         
-        //answerBox!.physicsBody = SKPhysicsBody(circleOfRadius: answerBox!.frame.height/2)
+        let physic = Physics()
+        answerBox!.physicsBody = physic.getAnswerBox(1,withSize: answerBox!.frame.height)
         
         addChild(answerBox!)
         
         
         answerBoxFx = SKSpriteNode(imageNamed: boxInstance.getTriangleName(1)+"fx")
         answerBoxFx!.position = CGPoint(x:CGRectGetMidX(self.frame), y:CGRectGetMidY(self.frame)-40);
-        answerBoxFx!.name = boxInstance.getTriangleName(1)+"fx"
+        answerBoxFx!.name = boxInstance.getTriangleName(1) + "fx"
         answerBoxFx!.zPosition = 98
         
         addChild(answerBoxFx!)

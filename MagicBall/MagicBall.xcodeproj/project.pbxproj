@@ -29,6 +29,7 @@
 		794DA0451B83579300F67F03 /* Balls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794DA0441B83579300F67F03 /* Balls.swift */; };
 		794DA0471B835BDF00F67F03 /* BallColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794DA0461B835BDF00F67F03 /* BallColors.swift */; };
 		79A3DC3C1B842C1F007D0EDA /* BasketballAnswers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A3DC3B1B842C1F007D0EDA /* BasketballAnswers.swift */; };
+		A7B7BF831B866D9C00EBF33F /* Physics.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B7BF821B866D9C00EBF33F /* Physics.swift */; };
 		A7C41F561B865F0500120F80 /* ChooseCoin.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C41F551B865F0500120F80 /* ChooseCoin.swift */; };
 /* End PBXBuildFile section */
 
@@ -78,6 +79,7 @@
 		794DA0441B83579300F67F03 /* Balls.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Balls.swift; path = ../Balls.swift; sourceTree = "<group>"; };
 		794DA0461B835BDF00F67F03 /* BallColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BallColors.swift; sourceTree = "<group>"; };
 		79A3DC3B1B842C1F007D0EDA /* BasketballAnswers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasketballAnswers.swift; sourceTree = "<group>"; };
+		A7B7BF821B866D9C00EBF33F /* Physics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Physics.swift; sourceTree = "<group>"; };
 		A7C41F551B865F0500120F80 /* ChooseCoin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseCoin.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -178,6 +180,7 @@
 		5EDD1E1C1B83D2750096A780 /* Utilitarios */ = {
 			isa = PBXGroup;
 			children = (
+				A7B7BF821B866D9C00EBF33F /* Physics.swift */,
 				5E231F731B84D20100A83447 /* Glass.swift */,
 				5EDD1E1A1B83D24E0096A780 /* Random.swift */,
 				794DA0441B83579300F67F03 /* Balls.swift */,
@@ -355,6 +358,7 @@
 				5EDD1E141B83C2570096A780 /* RespostasGenericas.swift in Sources */,
 				5E79756B1B8225E20003DDA1 /* AppDelegate.swift in Sources */,
 				5EDD1E1B1B83D24E0096A780 /* Random.swift in Sources */,
+				A7B7BF831B866D9C00EBF33F /* Physics.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
