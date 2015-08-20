@@ -24,6 +24,7 @@ class GameScene: SKScene
         text = false
         self.createBall()
         self.createGlass()
+        self.createButton()
         //self.createTriangle()
     }
     
@@ -111,8 +112,13 @@ class GameScene: SKScene
         labelAnswers?.zPosition = 100;
     }
     
-    func createButton(){
-        ballsButton = SKSpriteNode(imageNamed: "8BallIcon")
+    func createButton() {
+        ballsButton = SKSpriteNode(imageNamed: "8ballIcon")
+        ballsButton!.position = CGPoint(x: CGRectGetMaxX(self.frame)-20, y: CGRectGetMaxY(self.frame))
+        ballsButton!.name = "ballsButton"
+        ballsButton!.zPosition = 98
+        
+        addChild(ballsButton!)
     }
     
 }
