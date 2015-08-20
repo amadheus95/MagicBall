@@ -55,6 +55,18 @@ class GameScene: SKScene
             skView!.presentScene(scene)
         } else if (node.name == "coin") {
             print("CLICOU NO BOTAO DA COIN")
+            
+            let scene = ChooseCoin()
+            // Configure the view.
+            let skView = view
+            
+            /* Sprite Kit applies additional optimizations to improve rendering performance */
+            skView!.ignoresSiblingOrder = true
+            
+            /* Set the scale mode to scale to fit the window */
+            scene.scaleMode = .AspectFill
+            
+            skView!.presentScene(scene)
         }
         
     }
@@ -67,9 +79,9 @@ class GameScene: SKScene
     func createBall() {
         let ball = Balls()
         
-        balls = SKSpriteNode(imageNamed: ball.getBallName(1)) // chama a função do nome das bolas=
+        balls = SKSpriteNode(imageNamed: ball.getBallName(2)) // chama a função do nome das bolas=
         balls!.position = CGPoint(x:CGRectGetMidX(self.frame), y:CGRectGetMidY(self.frame));
-        balls!.name = ball.getBallName(1)
+        balls!.name = ball.getBallName(5)
         balls!.zPosition = 90
         
         backgroundColor = ball.background(1)
@@ -81,7 +93,7 @@ class GameScene: SKScene
         let glassInstance = Glass()
         
         glass = SKSpriteNode(imageNamed: glassInstance.getGlassName(1))
-        glass!.position = CGPoint(x:CGRectGetMidX(self.frame), y:CGRectGetMidY(self.frame));
+        glass!.position = CGPoint(x:CGRectGetMidX(self.frame), y:CGRectGetMidY(self.frame)-40);
         glass!.name = glassInstance.getGlassName(1)
         glass!.zPosition = 97
         
@@ -140,7 +152,7 @@ class GameScene: SKScene
     }
     
     func createButtonBall() {
-        ballsButton = SKSpriteNode(imageNamed: "8ballIcon")
+        ballsButton = SKSpriteNode(imageNamed: "basketIcon")
         ballsButton!.position = CGPoint(x: CGRectGetMidX(self.frame)*1.25, y: CGRectGetMaxY(self.frame) - ballsButton!.frame.height + 5)
         ballsButton!.name = "ballsButton"
         ballsButton!.zPosition = 908

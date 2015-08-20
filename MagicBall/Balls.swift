@@ -24,6 +24,14 @@ class Balls: SKSpriteNode
                 return "tennis"
             case 3:
                 return "basket"
+            case 4:
+                return "Pizzy"
+            case 5:
+                return "fogo1"
+            case 6:
+                return "laranjita"
+            case 7:
+                return "almondegados"
             
             default:
                 return "nada"
@@ -51,6 +59,9 @@ class Balls: SKSpriteNode
         case 2:
             let Resposta = RespostasTennis()
             return Resposta.getRespostas(value)
+        case 3:
+            let answer = BasketballAnswers()
+            return answer.getAnswers(value)
         case 3:
             let answer = BasketballAnswers()
             return answer.getAnswers(value)

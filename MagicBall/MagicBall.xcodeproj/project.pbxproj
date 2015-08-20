@@ -29,6 +29,7 @@
 		794DA0451B83579300F67F03 /* Balls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794DA0441B83579300F67F03 /* Balls.swift */; };
 		794DA0471B835BDF00F67F03 /* BallColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794DA0461B835BDF00F67F03 /* BallColors.swift */; };
 		79A3DC3C1B842C1F007D0EDA /* BasketballAnswers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A3DC3B1B842C1F007D0EDA /* BasketballAnswers.swift */; };
+		A7C41F561B865F0500120F80 /* ChooseCoin.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C41F551B865F0500120F80 /* ChooseCoin.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,7 @@
 		794DA0441B83579300F67F03 /* Balls.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Balls.swift; path = ../Balls.swift; sourceTree = "<group>"; };
 		794DA0461B835BDF00F67F03 /* BallColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BallColors.swift; sourceTree = "<group>"; };
 		79A3DC3B1B842C1F007D0EDA /* BasketballAnswers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasketballAnswers.swift; sourceTree = "<group>"; };
+		A7C41F551B865F0500120F80 /* ChooseCoin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseCoin.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +132,7 @@
 				5E79756A1B8225E20003DDA1 /* AppDelegate.swift */,
 				5E79756E1B8225E20003DDA1 /* GameScene.swift */,
 				5E79756C1B8225E20003DDA1 /* GameScene.sks */,
+				A7C41F551B865F0500120F80 /* ChooseCoin.swift */,
 				794D60961B860CB000AACB2A /* ChooseBall.swift */,
 				794D60911B86081E00AACB2A /* Controller */,
 				794D60881B84D63C00AACB2A /* Model */,
@@ -348,6 +351,7 @@
 				794D609B1B86227800AACB2A /* BallTypes.swift in Sources */,
 				5EDD1E161B83CE720096A780 /* Respostas8Ball.swift in Sources */,
 				5EDD1E191B83D0590096A780 /* RespostasTennis.swift in Sources */,
+				A7C41F561B865F0500120F80 /* ChooseCoin.swift in Sources */,
 				5EDD1E141B83C2570096A780 /* RespostasGenericas.swift in Sources */,
 				5E79756B1B8225E20003DDA1 /* AppDelegate.swift in Sources */,
 				5EDD1E1B1B83D24E0096A780 /* Random.swift in Sources */,
