@@ -23,4 +23,9 @@ class Physics {
         physics.dynamic = false
         return physics
     }
+    
+    //nova funcao pra getBorda
+    //SKTexture é a borda
+    //SKPhysicsBody(texture: SKTexture, size: 1)
+    
 }

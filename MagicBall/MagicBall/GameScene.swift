@@ -17,6 +17,7 @@ class GameScene: SKScene
     var labelAnswers: SKLabelNode?
     var glass       : SKSpriteNode?
     var balls       : SKSpriteNode?
+    //borda
     
     var ballsButton : SKSpriteNode?
     
@@ -89,6 +90,7 @@ class GameScene: SKScene
         addChild(balls!) // adicionando o objeto a cena
     }
     
+    //Mexer só aqui!
     func createGlass(){
         let glassInstance = Glass()
         
@@ -96,6 +98,9 @@ class GameScene: SKScene
         glass!.position = CGPoint(x:CGRectGetMidX(self.frame), y:CGRectGetMidY(self.frame)-40);
         glass!.name = glassInstance.getGlassName(1)
         glass!.zPosition = 97
+        
+        //Usar um novo SKSpriteNode pra borda
+        //novo.physbody = da Classe Physic
         
         let physic = Physics()
         glass!.physicsBody = physic.getGlass(1, withSize: glass!.frame.height)
