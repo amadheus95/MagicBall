@@ -16,6 +16,10 @@ class ChooseBall: SKScene
     var panGesture: UIPanGestureRecognizer? // acompanhar o dedo
     var lastPoint = CGPointMake(0, 0) // última posição do dedo
     var turnControl = 0 // controlar a vez de cada opção
+    var arrayBalls: Array<Balls> = Array() // vetor de bolas
+    let ballWidth: CGFloat = 180.0 // largura das bolas
+    let ballMargin: CGFloat = 57.0 // margem das bolas
+    
     
     override func didMoveToView(view: SKView)
     {
@@ -85,13 +89,45 @@ class ChooseBall: SKScene
         if gesture.state == UIGestureRecognizerState.Ended
         {
             turnControl = 0
+            fixBallPosition()
         }
     }
     
-    
-    
-    
-    
-    
+    func fixBallPosition()
+    {
+        let ballQuantity = arrayBalls.count
+        let xLimit = ballMargin * CGFloat(ballQuantity - 1) + ballWidth * CGFloat(ballQuantity)
+        let firstDistance = (ballWidth + ballMargin) / 2
+        let lastDistance = xLimit - (ballWidth + ballMargin / 2) - ballWidth / 2
+        var currentPosition: Int = 0
+        
+        if abs(boxBall!.position.x) <= firstDistance || boxBall!.position.x > 0
+        {
+            boxBall!.runAction(SKAction.moveTo(CGPointZero, duration: 0.1))
+        }
+        else if abs(boxBall!.position.x) >= lastDistance
+        {
+            boxBall!.runAction(SKAction.moveTo(CGPointMake(-xLimit + ballWidth, 0), duration: 0.1))
+            currentPosition = ballQuantity - 1
+        }
+        else
+        {
+            let jumpDistance = ballWidth + ballMargin
+            var halfPosition: Int = 1
+            var posTo: CGFloat = 0
+            
+            for var i = firstDistance + jumpDistance; i <= lastDistance; i += jumpDistance
+            {
+                if abs(boxBall!.position.x) < i
+                {
+                    posTo = i - ballMargin / 2 - ballWidth / 2
+                    break
+                }
+                halfPosition++
+            }
+            boxBall!.runAction(SKAction.moveToX(-posTo, duration: 0.1))
+            currentPosition = halfPosition
+        }
+    }
     
 }
