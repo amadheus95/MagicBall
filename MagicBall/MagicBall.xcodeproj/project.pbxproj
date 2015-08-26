@@ -132,10 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				5E79756A1B8225E20003DDA1 /* AppDelegate.swift */,
-				5E79756E1B8225E20003DDA1 /* GameScene.swift */,
-				5E79756C1B8225E20003DDA1 /* GameScene.sks */,
-				A7C41F551B865F0500120F80 /* ChooseCoin.swift */,
-				794D60961B860CB000AACB2A /* ChooseBall.swift */,
+				794D61181B8E3D6300AACB2A /* Scenes */,
 				794D60911B86081E00AACB2A /* Controller */,
 				794D60881B84D63C00AACB2A /* Model */,
 				5EDD1E1C1B83D2750096A780 /* Utilitarios */,
@@ -206,6 +203,17 @@
 				5E7975701B8225E20003DDA1 /* GameViewController.swift */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		794D61181B8E3D6300AACB2A /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				5E79756E1B8225E20003DDA1 /* GameScene.swift */,
+				5E79756C1B8225E20003DDA1 /* GameScene.sks */,
+				794D60961B860CB000AACB2A /* ChooseBall.swift */,
+				A7C41F551B865F0500120F80 /* ChooseCoin.swift */,
+			);
+			name = Scenes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -10,16 +10,20 @@ import Foundation
 import CoreData
 import UIKit
 
-class MagicBall: NSManagedObject
-{
-    func saveData() -> Void
-    {
+class MagicBall: NSManagedObject {
+    
+    func saveData() -> Void {
         let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         let managedContext = appDelegate.managedObjectContext
         let entity = NSEntityDescription.entityForName("MagicBall", inManagedObjectContext: managedContext)
         let atribute = NSManagedObject(entity: entity!, insertIntoManagedObjectContext: managedContext)
         
+        atribute.setValue(ballNumber, forKey: "ballNumber")
         
+    }
+    
+    func getBallNumber() -> NSNumber {
+        return ballNumber!
     }
     
 }

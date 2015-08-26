@@ -14,10 +14,8 @@ class Balls: SKSpriteNode
 {
     var balls: SKSpriteNode?
     
-    func getBallName(ballNumber: Int) -> String  // funcão para retornar o nome das bolas
-    {
-        switch(ballNumber)
-        {
+    func getBallName(ballNumber: Int) -> String { // funcão para retornar o nome das bolas
+        switch(ballNumber) {
             case 1:
                 return "8ball"
             case 2:
@@ -38,6 +36,28 @@ class Balls: SKSpriteNode
         }
     }
     
+    func ballIsUnlocked(ballNumber: Int) -> Bool{
+        //Aqui deveriamos pegar da merda do CoreData
+        switch(ballNumber) {
+        case 1:
+            return true
+        case 2:
+            return true
+        case 3:
+            return true
+        case 4:
+            return true
+        case 5:
+            return false
+        case 6:
+            return true
+        case 7:
+            return true
+        default:
+            return false
+        }
+    }
+    
     func background(ballNumber: Int) -> UIColor // retornar o fundo de cada bola
     {
         switch(ballNumber)
@@ -51,7 +71,7 @@ class Balls: SKSpriteNode
     }
     
     // função para retornar as respostas de cada classe
-    func getResposta(value: Int, ballNumber: Int) -> String{
+    func getResposta(value: Int, ballNumber: Int) -> String {
         switch ballNumber{
         case 1:
             let Resposta = Respostas8Ball()
@@ -71,7 +91,7 @@ class Balls: SKSpriteNode
     }
     
     // função para retornar o número máximo de respostas de cada classe
-    func getMaxRespostas(ballNumber: Int) -> Int{
+    func getMaxRespostas(ballNumber: Int) -> Int {
         switch ballNumber{
         case 1:
             let Resposta = Respostas8Ball()
@@ -87,8 +107,7 @@ class Balls: SKSpriteNode
         }
     }
     
-    func getTotalBalls() -> [String]
-    {
+    func getTotalBalls() -> [String] {
         var names = [String]() // nome das bolas
         var i: Int
         

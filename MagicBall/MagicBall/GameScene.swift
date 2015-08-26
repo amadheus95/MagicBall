@@ -32,6 +32,8 @@ class GameScene: SKScene
         x.getTotalBalls()
         
         self.createTriangle()
+        
+        
     }
     
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
