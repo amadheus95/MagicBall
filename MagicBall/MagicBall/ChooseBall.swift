@@ -15,6 +15,7 @@ class ChooseBall: SKScene
     var tapGesture: UITapGestureRecognizer? // ação - tap
     var panGesture: UIPanGestureRecognizer? // acompanhar o dedo
     var lastPoint = CGPointMake(0, 0) // última posição do dedo
+    var turnControl = 0 // controlar a vez de cada opção
     
     override func didMoveToView(view: SKView)
     {
@@ -34,7 +35,8 @@ class ChooseBall: SKScene
     func tapAction(sender: UITapGestureRecognizer)
     {
         // caso o tap tenha acabado
-        if sender.state == UIGestureRecognizerState.Ended {
+        if sender.state == UIGestureRecognizerState.Ended
+        {
             var touchLocation: CGPoint = sender.locationInView(sender.view)
             touchLocation = convertPointFromView(touchLocation)
             let node = nodeAtPoint(touchLocation)
@@ -47,7 +49,8 @@ class ChooseBall: SKScene
             
             let ballsInstance = Balls()
             
-            if ballsInstance.getBallName(Int(node.name!)!) != "nada" {
+            if ballsInstance.getBallName(Int(node.name!)!) != "nada"
+            {
                 //AQUI... deveriamos mexer no coreData
                 
                 print("CLICOU NO BOTAO DA BOLA: \(ballsInstance.getBallName(Int(node.name!)!))")
@@ -57,9 +60,35 @@ class ChooseBall: SKScene
                 scene.scaleMode = .AspectFill
                 skView!.presentScene(scene)
             }
-            
         }
     }
+    
+    func panAction(gesture: UIPanGestureRecognizer)
+    {
+        if gesture.state == UIGestureRecognizerState.Changed
+        {
+            if turnControl == 0
+            {
+                let pos: CGPoint = gesture.translationInView(view)
+                lastPoint = pos
+                turnControl++
+            }
+            
+            let translation: CGPoint = gesture.translationInView(view)
+            let deslocPoint: CGPoint = CGPointMake(translation.x - lastPoint.x, translation.y - lastPoint.y)
+            let action = SKAction.moveBy(CGVector(dx: deslocPoint.x, dy: 0), duration: 0)
+            boxBall?.runAction(action)
+            let position: CGPoint = gesture.translationInView(view)
+            lastPoint = position
+        }
+        
+        if gesture.state == UIGestureRecognizerState.Ended
+        {
+            turnControl = 0
+        }
+    }
+    
+    
     
     
     
