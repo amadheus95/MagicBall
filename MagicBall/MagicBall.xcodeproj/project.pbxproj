@@ -294,6 +294,9 @@
 							com.apple.GameCenter = {
 								enabled = 1;
 							};
+							com.apple.Push = {
+								enabled = 1;
+							};
 						};
 					};
 					5E79757E1B8225E20003DDA1 = {
