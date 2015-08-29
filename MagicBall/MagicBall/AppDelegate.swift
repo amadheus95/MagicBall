@@ -15,12 +15,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     
     
-    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        let notificationType = UIUserNotificationType.Alert
-        let settings = UIUserNotificationSettings(forTypes: notificationType, categories: nil)
-        application.registerUserNotificationSettings(settings)
+    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool
+    {
+        let notificationType = UIUserNotificationType.Alert // tipo de notificação
+        let settings = UIUserNotificationSettings(forTypes: notificationType, categories: nil) // chamando a notificação
+        application.registerUserNotificationSettings(settings) // jogando para as configurações
         return true
     }
+    
     // validando a notificação
     func application(application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: NSData)
     {
