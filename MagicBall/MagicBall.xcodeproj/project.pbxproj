@@ -81,7 +81,6 @@
 		794DA0461B835BDF00F67F03 /* BallColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BallColors.swift; sourceTree = "<group>"; };
 		79A3DC3B1B842C1F007D0EDA /* BasketballAnswers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasketballAnswers.swift; sourceTree = "<group>"; };
 		79ABA1F51B8F90DB0046F1C6 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
-		79ABA2701B924BCA0046F1C6 /* Magic_Ball.mobileprovision */ = {isa = PBXFileReference; lastKnownFileType = file; name = Magic_Ball.mobileprovision; path = ../../../Downloads/Magic_Ball.mobileprovision; sourceTree = "<group>"; };
 		79ABA2711B924C430046F1C6 /* MagicBall.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = MagicBall.entitlements; sourceTree = "<group>"; };
 		A7B7BF821B866D9C00EBF33F /* Physics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Physics.swift; sourceTree = "<group>"; };
 		A7C41F551B865F0500120F80 /* ChooseCoin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseCoin.swift; sourceTree = "<group>"; };
@@ -116,7 +115,6 @@
 		5E79755E1B8225E20003DDA1 = {
 			isa = PBXGroup;
 			children = (
-				79ABA2701B924BCA0046F1C6 /* Magic_Ball.mobileprovision */,
 				79ABA1F51B8F90DB0046F1C6 /* GameKit.framework */,
 				5E7975691B8225E20003DDA1 /* MagicBall */,
 				5E7975821B8225E20003DDA1 /* MagicBallTests */,
