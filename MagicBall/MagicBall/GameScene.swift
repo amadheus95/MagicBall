@@ -46,13 +46,11 @@ class GameScene: SKScene
         
         if (node.name == "ballsButton"){
             let scene = ChooseBall()
-            // Configure the view.
             let skView = view
             
-            /* Sprite Kit applies additional optimizations to improve rendering performance */
             skView!.ignoresSiblingOrder = true
             
-            /* Set the scale mode to scale to fit the window */
+            
             scene.scaleMode = .AspectFill
             
             skView!.presentScene(scene)
@@ -60,13 +58,12 @@ class GameScene: SKScene
             print("CLICOU NO BOTAO DA COIN")
             
             let scene = ChooseCoin()
-            // Configure the view.
+           
             let skView = view
             
-            /* Sprite Kit applies additional optimizations to improve rendering performance */
+            
             skView!.ignoresSiblingOrder = true
             
-            /* Set the scale mode to scale to fit the window */
             scene.scaleMode = .AspectFill
             
             skView!.presentScene(scene)
@@ -76,7 +73,7 @@ class GameScene: SKScene
     
     override func update(currentTime: CFTimeInterval)
     {
-        /* Called before each frame is rendered */
+        
     }
     
     func createBall() {
