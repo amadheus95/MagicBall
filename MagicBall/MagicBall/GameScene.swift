@@ -45,6 +45,7 @@ class GameScene: SKScene
         node = nodeAtPoint(location)
         
         if (node.name == "ballsButton"){
+            print("CLICOU NO BOTÃO DE ESCOLHA")
             let scene = ChooseBall()
             let skView = view
             
@@ -55,10 +56,9 @@ class GameScene: SKScene
             
             skView!.presentScene(scene)
         } else if (node.name == "coin") {
-            print("CLICOU NO BOTAO DA COIN")
+            print("CLICOU NO BOTÃO DA COIN")
             
             let scene = ChooseCoin()
-           
             let skView = view
             
             
