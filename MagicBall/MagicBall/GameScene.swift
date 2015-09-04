@@ -39,8 +39,10 @@ class GameScene: SKScene
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
         var touch = UITouch()
         touch = touches.first!
+        
         var location = CGPoint()
         location = touch.locationInNode(self)
+        
         var node = SKNode()
         node = nodeAtPoint(location)
         
@@ -50,7 +52,6 @@ class GameScene: SKScene
             let skView = view
             
             skView!.ignoresSiblingOrder = true
-            
             
             scene.scaleMode = .AspectFill
             
@@ -67,6 +68,10 @@ class GameScene: SKScene
             scene.scaleMode = .AspectFill
             
             skView!.presentScene(scene)
+        }
+        else if(node.name == "points")
+        {
+            
         }
         
     }
@@ -177,6 +182,11 @@ class GameScene: SKScene
         ballsButton!.zPosition = 908
         
         addChild(ballsButton!)
+    }
+    
+    func points()
+    {
+        // fazer a função para submeter a pontuação para o Game Center
     }
     
 }

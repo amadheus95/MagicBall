@@ -88,11 +88,14 @@ class GameViewController: UIViewController {
         return true
     }
     
-    func authenticateLocalPlayer() {
+    // autenticação com o Game Center
+    func authenticateLocalPlayer()
+    {
         let localPlayer: GKLocalPlayer = GKLocalPlayer.localPlayer()
         
         localPlayer.authenticateHandler = {(ViewController, error) -> Void in
-            if((ViewController) != nil) {
+            if((ViewController) != nil)
+            {
                 // 1 Show login if player is not logged in
                 self.presentViewController(ViewController!, animated: true, completion: nil)
             } else if (localPlayer.authenticated) {
@@ -109,7 +112,9 @@ class GameViewController: UIViewController {
 //                })
                 
                 
-            } else {
+            }
+            else
+            {
                 // 3 Game center is not enabled on the users device
                 self.gcEnabled = false
                 print("Local player could not be authenticated, disabling game center")
