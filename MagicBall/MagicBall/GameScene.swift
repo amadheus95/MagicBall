@@ -47,7 +47,8 @@ class GameScene: SKScene
         node = nodeAtPoint(location)
         
         if (node.name == "ballsButton"){
-            print("CLICOU NO BOTÃO DE ESCOLHA")
+            //print("CLICOU NO BOTÃO DE ESCOLHA")
+            
             let scene = ChooseBall()
             let skView = view
             
@@ -56,7 +57,9 @@ class GameScene: SKScene
             scene.scaleMode = .AspectFill
             
             skView!.presentScene(scene)
-        } else if (node.name == "coin") {
+        }
+        else if (node.name == "coin")
+        {
             print("CLICOU NO BOTÃO DA COIN")
             
             let scene = ChooseCoin()
@@ -186,7 +189,10 @@ class GameScene: SKScene
     
     func points()
     {
-        // fazer a função para submeter a pontuação para o Game Center
+        ballsButton = SKSpriteNode(imageNamed: "fogo1")
+        ballsButton!.position = CGPoint(x: CGRectGetMidX(frame) * 1.45, y: CGRectGetMaxY(frame) - ballsButton!.frame.height + 5)
+        ballsButton!.name = "points"
+        ballsButton!.zPosition = 908
     }
     
 }
