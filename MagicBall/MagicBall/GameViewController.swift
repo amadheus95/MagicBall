@@ -34,6 +34,8 @@ class GameViewController: UIViewController {
         
         skView.presentScene(scene)
         authenticateLocalPlayer()
+        
+        notification()
     }
     
     override func shouldAutorotate() -> Bool {
@@ -122,6 +124,30 @@ class GameViewController: UIViewController {
             }
             
         }
+    }
+    
+    func notification() -> Void
+    {
+        let dateComp: NSDateComponents = NSDateComponents()
+        dateComp.year = 2015
+        dateComp.month = 09
+        dateComp.day = 28
+        dateComp.hour = 20
+        dateComp.minute = 20
         
+        dateComp.timeZone = NSTimeZone.systemTimeZone()
+        
+        let calender: NSCalendar = NSCalendar(calendarIdentifier: NSCalendarIdentifierGregorian)!
+        
+        let date:NSDate = calender.dateFromComponents(dateComp)!
+        
+        
+        let notification: UILocalNotification = UILocalNotification()
+        notification.category = "FIRST_CATEGORY"
+        notification.alertBody = "Play this game, now!!!!"
+        notification.fireDate = date
+        
+        UIApplication.sharedApplication().scheduleLocalNotification(notification)
+
     }
 }
