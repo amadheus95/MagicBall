@@ -30,6 +30,10 @@ class Balls: SKSpriteNode
                 return "laranjita"
             case 7:
                 return "almondegados"
+            case 8:
+                return "boladecristal"
+            case 9:
+                return "bolinhodearroz"
             
             default:
                 return "nada"
@@ -53,6 +57,11 @@ class Balls: SKSpriteNode
             return true
         case 7:
             return true
+        case 8:
+            return true
+        case 9:
+            return true
+        
         default:
             return false
         }
