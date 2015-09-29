@@ -40,21 +40,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="bZT-3O-pyt">
-                            <size key="itemSize" width="158" height="404"/>
+                            <size key="itemSize" width="158" height="425"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="bottomLeft" reuseIdentifier="cell" id="k1a-ei-sce">
-                                <rect key="frame" x="0.0" y="98" width="158" height="404"/>
+                                <rect key="frame" x="0.0" y="87.5" width="158" height="425"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="158" height="404"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="158" height="425"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Idb-L8-IY3">
-                                            <rect key="frame" x="19" y="110" width="121" height="184"/>
+                                            <rect key="frame" x="19" y="120" width="121" height="184"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="121" id="E3N-C2-rIu"/>
                                                 <constraint firstAttribute="height" constant="184" id="Js8-8c-Ofh"/>

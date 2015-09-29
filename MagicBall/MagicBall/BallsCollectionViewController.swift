@@ -13,7 +13,7 @@ import UIKit
 class BallsCollectionViewController: UICollectionViewController {
     
     var array = [String]()
-    var cont = Int()
+
     override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -47,11 +47,10 @@ class BallsCollectionViewController: UICollectionViewController {
         
         let button = cell.viewWithTag(1) as! UIImageView // criando uma tag para cada collection
         
-        if(cont>=0 && cont<array.count){
-            button.image = UIImage(named: array[cont]) // adicionando a imagem
-            cont++
-        }
-        print(cont)
+        
+            button.image = UIImage(named: array[indexPath.row]) // adicionando a imagem
+
+        
         return cell
     }
     
