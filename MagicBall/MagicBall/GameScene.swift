@@ -49,14 +49,10 @@ class GameScene: SKScene
         if (node.name == "ballsButton"){
             //print("CLICOU NO BOTÃO DE ESCOLHA")
             
-            let scene = ChooseBall()
+            let scene = BallsCollectionViewController()
             let skView = view
             
             skView!.ignoresSiblingOrder = true
-            
-            scene.scaleMode = .AspectFill
-            
-            skView!.presentScene(scene)
         }
         else if (node.name == "coin")
         {
