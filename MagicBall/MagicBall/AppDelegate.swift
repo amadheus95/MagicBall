@@ -57,6 +57,47 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
         // Saves changes in the application's managed object context before the application terminates.
+        
+        
+        let date = NSDate()
+        let calendar = NSCalendar.currentCalendar()
+        var components = calendar.components(.NSYearCalendarUnit, fromDate: date)
+        let year =  components.year
+        
+        components = calendar.components(.NSMonthCalendarUnit, fromDate: date)
+        let month = components.month
+        
+        components = calendar.components(.NSDayCalendarUnit, fromDate: date)
+        let day = components.day
+        
+        components = calendar.components(.NSHourCalendarUnit, fromDate: date)
+        let hour = components.hour
+        
+        components = calendar.components(.NSMinuteCalendarUnit, fromDate: date)
+        let minute = components.minute
+        
+        let dateComp: NSDateComponents = NSDateComponents()
+        dateComp.year = year
+        dateComp.month = month
+        dateComp.day = day
+        dateComp.hour = hour
+        dateComp.minute = minute+1
+        
+        dateComp.timeZone = NSTimeZone.systemTimeZone()
+        
+        let calender: NSCalendar = NSCalendar(calendarIdentifier: NSCalendarIdentifierGregorian)!
+        
+        let date2:NSDate = calender.dateFromComponents(dateComp)!
+        
+        
+        let notification: UILocalNotification = UILocalNotification()
+        notification.category = "FIRST_CATEGORY"
+        notification.alertBody = "❤️ Luv Pizza ❤️"
+        notification.fireDate = date2
+        
+        UIApplication.sharedApplication().scheduleLocalNotification(notification)
+        
+        
         self.saveContext()
     }
     
@@ -65,7 +106,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     lazy var applicationDocumentsDirectory: NSURL = {
         // The directory the application uses to store the Core Data store file. This code uses a directory named "br.com.fucapi.TesteEsportes" in the application's documents Application Support directory.
         let urls = NSFileManager.defaultManager().URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask)
-        return urls[urls.count-1] as! NSURL
+        return urls[urls.count-1] 
         }()
     
     lazy var managedObjectModel: NSManagedObjectModel = {
