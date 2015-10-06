@@ -21,7 +21,7 @@
 		5EDD1E161B83CE720096A780 /* Respostas8Ball.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDD1E151B83CE720096A780 /* Respostas8Ball.swift */; };
 		5EDD1E191B83D0590096A780 /* RespostasTennis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDD1E181B83D0590096A780 /* RespostasTennis.swift */; };
 		5EDD1E1B1B83D24E0096A780 /* Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDD1E1A1B83D24E0096A780 /* Random.swift */; };
-		79258C0C1B9A1F1400AEBC7C /* GameCenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79258C0B1B9A1F1400AEBC7C /* GameCenterTest.swift */; settings = {ASSET_TAGS = (); }; };
+		79258C0C1B9A1F1400AEBC7C /* GameCenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79258C0B1B9A1F1400AEBC7C /* GameCenterTest.swift */; };
 		794D60871B84D62D00AACB2A /* MagicBall.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 794D60851B84D62D00AACB2A /* MagicBall.xcdatamodeld */; };
 		794D608B1B84D7A500AACB2A /* MagicBall+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794D60891B84D7A500AACB2A /* MagicBall+CoreDataProperties.swift */; };
 		794D608C1B84D7A500AACB2A /* MagicBall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794D608A1B84D7A500AACB2A /* MagicBall.swift */; };
@@ -31,6 +31,8 @@
 		794DA0471B835BDF00F67F03 /* BallColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794DA0461B835BDF00F67F03 /* BallColors.swift */; };
 		79A3DC3C1B842C1F007D0EDA /* BasketballAnswers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A3DC3B1B842C1F007D0EDA /* BasketballAnswers.swift */; };
 		79ABA1F61B8F90DB0046F1C6 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79ABA1F51B8F90DB0046F1C6 /* GameKit.framework */; };
+		A767BAA41BBAEC6C00642290 /* BallsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A767BAA31BBAEC6C00642290 /* BallsCollectionViewController.swift */; };
+		A79EA4071BBB4EEB008BC1B5 /* loadSwipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79EA4061BBB4EEB008BC1B5 /* loadSwipe.swift */; };
 		A7B7BF831B866D9C00EBF33F /* Physics.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B7BF821B866D9C00EBF33F /* Physics.swift */; };
 		A7C41F561B865F0500120F80 /* ChooseCoin.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C41F551B865F0500120F80 /* ChooseCoin.swift */; };
 /* End PBXBuildFile section */
@@ -84,6 +86,8 @@
 		79A3DC3B1B842C1F007D0EDA /* BasketballAnswers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasketballAnswers.swift; sourceTree = "<group>"; };
 		79ABA1F51B8F90DB0046F1C6 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 		79ABA2711B924C430046F1C6 /* MagicBall.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = MagicBall.entitlements; sourceTree = "<group>"; };
+		A767BAA31BBAEC6C00642290 /* BallsCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BallsCollectionViewController.swift; sourceTree = "<group>"; };
+		A79EA4061BBB4EEB008BC1B5 /* loadSwipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loadSwipe.swift; sourceTree = "<group>"; };
 		A7B7BF821B866D9C00EBF33F /* Physics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Physics.swift; sourceTree = "<group>"; };
 		A7C41F551B865F0500120F80 /* ChooseCoin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseCoin.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -192,6 +196,7 @@
 				794DA0441B83579300F67F03 /* Balls.swift */,
 				794D609A1B86227800AACB2A /* BallTypes.swift */,
 				794DA0461B835BDF00F67F03 /* BallColors.swift */,
+				A79EA4061BBB4EEB008BC1B5 /* loadSwipe.swift */,
 			);
 			name = Utilitarios;
 			sourceTree = "<group>";
@@ -210,6 +215,7 @@
 			isa = PBXGroup;
 			children = (
 				5E7975701B8225E20003DDA1 /* GameViewController.swift */,
+				A767BAA31BBAEC6C00642290 /* BallsCollectionViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -375,8 +381,10 @@
 				794DA0451B83579300F67F03 /* Balls.swift in Sources */,
 				794D608C1B84D7A500AACB2A /* MagicBall.swift in Sources */,
 				5E79756F1B8225E20003DDA1 /* GameScene.swift in Sources */,
+				A79EA4071BBB4EEB008BC1B5 /* loadSwipe.swift in Sources */,
 				79A3DC3C1B842C1F007D0EDA /* BasketballAnswers.swift in Sources */,
 				5E231F741B84D20100A83447 /* Glass.swift in Sources */,
+				A767BAA41BBAEC6C00642290 /* BallsCollectionViewController.swift in Sources */,
 				5E7975711B8225E20003DDA1 /* GameViewController.swift in Sources */,
 				794DA0471B835BDF00F67F03 /* BallColors.swift in Sources */,
 				794D60871B84D62D00AACB2A /* MagicBall.xcdatamodeld in Sources */,
