@@ -8,6 +8,7 @@
 
 import SpriteKit
 import UIKit
+import Foundation
 
 class GameScene: SKScene
 {
@@ -46,14 +47,21 @@ class GameScene: SKScene
         var node = SKNode()
         node = nodeAtPoint(location)
         
-        if (node.name == "ballsButton"){
-            //print("CLICOU NO BOTÃO DE ESCOLHA")
+        if (node.name == "ballsButton")
+        {
+            print("CLICOU NO BOTÃO DE ESCOLHA")
+            
+//            var collectionBalls: UIStoryboard!
+//            collectionBalls = UIStoryboard(name: "choose-ball", bundle: nil)
+//            let viewController: UIViewController = collectionBalls.instantiateViewControllerWithIdentifier("main") as UIViewController
+//            //self.window!.rootViewCotroller = viewController
             
             let scene = BallsCollectionViewController()
             let skView = view
             
             skView!.ignoresSiblingOrder = true
         }
+        
         else if (node.name == "coin")
         {
             print("CLICOU NO BOTÃO DA COIN")
