@@ -26,7 +26,7 @@ class GameScene: SKScene
         text = false
         self.createBall()
         self.createGlass()
-        self.createButtonBall()
+        //self.createButtonBall()
         self.createButtonCoin()
         
         let x = Balls()

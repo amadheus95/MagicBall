@@ -17,9 +17,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ftw-mD-2im">
-                                <rect key="frame" x="281" y="12" width="30" height="23"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ftw-mD-2im">
+                                <rect key="frame" x="281" y="13" width="35" height="35"/>
                                 <animations/>
+                                <state key="normal" image="basketIcon"/>
                                 <connections>
                                     <segue destination="1FA-TE-yTy" kind="show" id="iuN-4N-P7J"/>
                                 </connections>
@@ -82,4 +83,7 @@
             <point key="canvasLocation" x="1750" y="381"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="basketIcon" width="40" height="40"/>
+    </resources>
 </document>
