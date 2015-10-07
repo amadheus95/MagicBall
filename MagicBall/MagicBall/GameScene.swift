@@ -28,7 +28,7 @@ class GameScene: SKScene
         self.createBall()
         self.createGlass()
         //self.createButtonBall()
-        self.createButtonCoin()
+        //self.createButtonCoin()
         
         let x = Balls()
         x.getTotalBalls()
