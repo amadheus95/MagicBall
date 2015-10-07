@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BV1-FR-VrT">
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <scenes>
@@ -77,6 +76,9 @@
                             <outlet property="delegate" destination="1FA-TE-yTy" id="ayr-dl-aiL"/>
                         </connections>
                     </collectionView>
+                    <connections>
+                        <segue destination="BV1-FR-VrT" kind="show" identifier="vai" id="dzd-Gc-cgP"/>
+                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NdL-uz-Vh1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

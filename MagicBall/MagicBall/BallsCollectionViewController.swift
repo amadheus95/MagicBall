@@ -8,7 +8,7 @@
 
 import UIKit
 
-
+var index = Int()
 
 class BallsCollectionViewController: UICollectionViewController {
     
@@ -17,15 +17,17 @@ class BallsCollectionViewController: UICollectionViewController {
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        array.append("8ball")
+        array.append("tennis")
         array.append("basket")
+        array.append("Pizzy")
         array.append("fogo1")
         array.append("laranjita")
-        array.append("Pizzy")
-        array.append("tennis")
+        array.append("almondegados")
         array.append("boladecristal")
         array.append("bolinhodearroz")
-        array.append("almondegados")
-        array.append("8ball")
+        
+        
 
     }
     
@@ -59,6 +61,15 @@ class BallsCollectionViewController: UICollectionViewController {
     {
         //self.performSegueWithIdentifier("vai", sender: self)
         print("opa\(indexPath.row)")
+        index = indexPath.row
+        self.performSegueWithIdentifier("vai", sender: self)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "vai" {
+            let viewController:GameViewController = segue.destinationViewController as! GameViewController
+            viewController.index = index
+        }
     }
     
 //    override func prepareForSegue(segue: UIStoryboardSegue?, sender: AnyObject?) {
