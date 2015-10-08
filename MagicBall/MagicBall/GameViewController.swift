@@ -13,6 +13,7 @@ import GameKit
 @IBDesignable
 
 class GameViewController: UIViewController {
+    var index = Int()
     var scene = GameScene()
     var score: Int = 0 // Stores the score
     var gcEnabled = Bool() // Stores if the user has Game Center enabled
@@ -31,7 +32,7 @@ class GameViewController: UIViewController {
         skView.ignoresSiblingOrder = true
         
         scene.scaleMode = .AspectFill
-        
+        scene.index = index
         skView.presentScene(scene)
         authenticateLocalPlayer()
         

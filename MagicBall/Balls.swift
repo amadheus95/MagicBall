@@ -16,23 +16,23 @@ class Balls: SKSpriteNode
     
     func getBallName(ballNumber: Int) -> String { // funcão para retornar o nome das bolas
         switch(ballNumber) {
-            case 1:
+            case 0:
                 return "8ball"
-            case 2:
+            case 1:
                 return "tennis"
-            case 3:
+            case 2:
                 return "basket"
-            case 4:
+            case 3:
                 return "Pizzy"
-            case 5:
+            case 4:
                 return "fogo1"
-            case 6:
+            case 5:
                 return "laranjita"
-            case 7:
+            case 6:
                 return "almondegados"
-            case 8:
+            case 7:
                 return "boladecristal"
-            case 9:
+            case 8:
                 return "bolinhodearroz"
             
             default:
@@ -41,8 +41,10 @@ class Balls: SKSpriteNode
     }
     
     func ballIsUnlocked(ballNumber: Int) -> Bool{
-        //Aqui deveriamos pegar da merda do CoreData
+        //Aqui deveriamos pegar do CoreData
         switch(ballNumber) {
+        case 0:
+            return true
         case 1:
             return true
         case 2:
@@ -50,16 +52,14 @@ class Balls: SKSpriteNode
         case 3:
             return true
         case 4:
-            return true
-        case 5:
             return false
+        case 5:
+            return true
         case 6:
             return true
         case 7:
             return true
         case 8:
-            return true
-        case 9:
             return true
         
         default:
@@ -71,24 +71,24 @@ class Balls: SKSpriteNode
     {
         switch(ballNumber)
         {
-        case 1:
+        case 0:
             return UIColor.blueColor().eightBall
             
         default:
-            return UIColor.greenColor()
+            return UIColor.greenColor().eightBall
         }
     }
     
     // função para retornar as respostas de cada classe
     func getResposta(value: Int, ballNumber: Int) -> String {
         switch ballNumber{
-        case 1:
+        case 0:
             let Resposta = Respostas8Ball()
             return Resposta.getRespostas(value)
-        case 2:
+        case 1:
             let Resposta = RespostasTennis()
             return Resposta.getRespostas(value)
-        case 3:
+        case 2:
             let answer = BasketballAnswers()
             return answer.getAnswers(value)
         case 3:
@@ -102,13 +102,13 @@ class Balls: SKSpriteNode
     // função para retornar o número máximo de respostas de cada classe
     func getMaxRespostas(ballNumber: Int) -> Int {
         switch ballNumber{
-        case 1:
+        case 0:
             let Resposta = Respostas8Ball()
             return Resposta.getNumeroMaximodeRespostas()
-        case 2:
+        case 1:
             let Resposta = RespostasTennis()
             return Resposta.getNumeroMaximodeRespostas()
-        case 3:
+        case 2:
             let answer = BasketballAnswers()
             return answer.getMaximumAnswerNumbers()
         default:
