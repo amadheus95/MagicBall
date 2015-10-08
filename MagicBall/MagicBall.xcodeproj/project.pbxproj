@@ -143,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				79ABA2711B924C430046F1C6 /* MagicBall.entitlements */,
+				79258C0B1B9A1F1400AEBC7C /* GameCenterTest.swift */,
 				5E79756A1B8225E20003DDA1 /* AppDelegate.swift */,
 				794D61181B8E3D6300AACB2A /* Scenes */,
 				794D60911B86081E00AACB2A /* Controller */,
@@ -179,7 +180,6 @@
 			isa = PBXGroup;
 			children = (
 				5EDD1E181B83D0590096A780 /* RespostasTennis.swift */,
-				79258C0B1B9A1F1400AEBC7C /* GameCenterTest.swift */,
 				5EDD1E151B83CE720096A780 /* Respostas8Ball.swift */,
 				79A3DC3B1B842C1F007D0EDA /* BasketballAnswers.swift */,
 				5EDD1E131B83C2570096A780 /* RespostasGenericas.swift */,

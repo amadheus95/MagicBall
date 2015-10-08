@@ -26,9 +26,6 @@ class BallsCollectionViewController: UICollectionViewController {
         array.append("almondegados")
         array.append("boladecristal")
         array.append("bolinhodearroz")
-        
-        
-
     }
     
     override func didReceiveMemoryWarning()
