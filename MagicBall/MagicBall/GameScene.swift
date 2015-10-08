@@ -27,8 +27,6 @@ class GameScene: SKScene
         text = false
         self.createBall()
         self.createGlass()
-        //self.createButtonBall()
-        //self.createButtonCoin()
         
         let x = Balls()
         x.getTotalBalls()
@@ -36,57 +34,6 @@ class GameScene: SKScene
         self.createTriangle()
         
         print(index!)
-        
-    }
-    
-    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
-        var touch = UITouch()
-        touch = touches.first!
-        
-        var location = CGPoint()
-        location = touch.locationInNode(self)
-        
-        var node = SKNode()
-        node = nodeAtPoint(location)
-        
-        if (node.name == "ballsButton")
-        {
-            print("CLICOU NO BOTÃO DE ESCOLHA")
-            
-//            var collectionBalls: UIStoryboard!
-//            collectionBalls = UIStoryboard(name: "choose-ball", bundle: nil)
-//            let viewController: UIViewController = collectionBalls.instantiateViewControllerWithIdentifier("main") as UIViewController
-//            //self.window!.rootViewCotroller = viewController
-            
-            let scene = BallsCollectionViewController()
-            let skView = view
-            
-            skView!.ignoresSiblingOrder = true
-        }
-        
-        else if (node.name == "coin")
-        {
-            print("CLICOU NO BOTÃO DA COIN")
-            
-            let scene = ChooseCoin()
-            let skView = view
-            
-            
-            skView!.ignoresSiblingOrder = true
-            
-            scene.scaleMode = .AspectFill
-            
-            skView!.presentScene(scene)
-        }
-        else if(node.name == "points")
-        {
-            
-        }
-        
-    }
-    
-    override func update(currentTime: CFTimeInterval)
-    {
         
     }
     
@@ -111,9 +58,6 @@ class GameScene: SKScene
         glass!.position = CGPoint(x:CGRectGetMidX(self.frame), y:CGRectGetMidY(self.frame)-40);
         glass!.name = glassInstance.getGlassName(1)
         glass!.zPosition = 97
-        
-        //Usar um novo SKSpriteNode pra borda
-        //novo.physbody = da Classe Physic
         
         let physic = Physics()
         glass!.physicsBody = physic.getGlass(1, withSize: glass!.frame.height)
@@ -173,24 +117,6 @@ class GameScene: SKScene
         labelAnswers?.fontColor = SKColor.whiteColor();
         labelAnswers?.name = "Texto";
         labelAnswers?.zPosition = 100;
-    }
-    
-    func createButtonBall() {
-        ballsButton = SKSpriteNode(imageNamed: "basketIcon")
-        ballsButton!.position = CGPoint(x: CGRectGetMidX(self.frame)*1.25, y: CGRectGetMaxY(self.frame) - ballsButton!.frame.height + 5)
-        ballsButton!.name = "ballsButton"
-        ballsButton!.zPosition = 908
-        
-        addChild(ballsButton!)
-    }
-    
-    func createButtonCoin() {
-        ballsButton = SKSpriteNode(imageNamed: "coin")
-        ballsButton!.position = CGPoint(x: CGRectGetMidX(self.frame)*1.35, y: CGRectGetMaxY(self.frame) - ballsButton!.frame.height + 5)
-        ballsButton!.name = "coin"
-        ballsButton!.zPosition = 908
-        
-        addChild(ballsButton!)
     }
     
     func points()

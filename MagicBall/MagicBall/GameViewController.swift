@@ -19,6 +19,9 @@ class GameViewController: UIViewController {
     var gcEnabled = Bool() // Stores if the user has Game Center enabled
     var gcDefaultLeaderBoard = String() // Stores the default leaderboardID
     
+    @IBAction func ClicounaBola(sender: AnyObject) {
+        scene.removeAllChildren()
+    }
     override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -125,6 +128,10 @@ class GameViewController: UIViewController {
             }
             
         }
+    }
+    
+    override func viewDidDisappear(animated: Bool) {
+        removeFromParentViewController()
     }
     
     func notification() -> Void

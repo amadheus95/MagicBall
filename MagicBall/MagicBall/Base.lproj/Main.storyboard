@@ -21,6 +21,7 @@
                                 <animations/>
                                 <state key="normal" image="basketIcon"/>
                                 <connections>
+                                    <action selector="ClicounaBola:" destination="BV1-FR-VrT" eventType="touchUpInside" id="ETb-Ky-s32"/>
                                     <segue destination="1FA-TE-yTy" kind="show" id="iuN-4N-P7J"/>
                                 </connections>
                             </button>
@@ -64,6 +65,11 @@
                                                 <constraint firstAttribute="height" constant="184" id="Js8-8c-Ofh"/>
                                             </constraints>
                                         </imageView>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ctA-T6-dqk">
+                                            <rect key="frame" x="47" y="347" width="65" height="30"/>
+                                            <animations/>
+                                            <state key="normal" title="Comprar!"/>
+                                        </button>
                                     </subviews>
                                     <animations/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
