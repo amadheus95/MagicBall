@@ -42,7 +42,7 @@ class GameScene: SKScene
         
         balls = SKSpriteNode(imageNamed: ball.getBallName(index!)) // chama a função do nome das bolas=
         balls!.position = CGPoint(x:CGRectGetMidX(self.frame), y:CGRectGetMidY(self.frame));
-        balls!.name = ball.getBallName(5)
+        balls!.name = ball.getBallName(index!)
         balls!.zPosition = 90
         
         backgroundColor = ball.background(1)
@@ -72,12 +72,12 @@ class GameScene: SKScene
             addChild(labelAnswers!)
         }
         let Ball = Balls()
-        let MaxRespostas = Ball.getMaxRespostas(1)
+        let MaxRespostas = Ball.getMaxRespostas(index!)
         
         let ramdomInstance = Random()
         let randomNumber = ramdomInstance.randomInt(1, max: MaxRespostas)
         
-        labelAnswers?.text = Ball.getResposta(randomNumber, ballNumber: 1)
+        labelAnswers?.text = Ball.getResposta(randomNumber, ballNumber: index!)
         print(labelAnswers!.text)
         
     }

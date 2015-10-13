@@ -53,7 +53,7 @@ class RespostasGenericas {
         case 20:
             return "Very doubtful"
         default:
-            return "Deu merda na Generica, recebi o valor: \(value)"
+            return "Accept, is better"
         }
     }
 }
