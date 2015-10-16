@@ -29,7 +29,6 @@
 		79A3DC3C1B842C1F007D0EDA /* BasketballAnswers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A3DC3B1B842C1F007D0EDA /* BasketballAnswers.swift */; };
 		79ABA1F61B8F90DB0046F1C6 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79ABA1F51B8F90DB0046F1C6 /* GameKit.framework */; };
 		A767BAA41BBAEC6C00642290 /* BallsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A767BAA31BBAEC6C00642290 /* BallsCollectionViewController.swift */; };
-		A79EA4071BBB4EEB008BC1B5 /* loadSwipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79EA4061BBB4EEB008BC1B5 /* loadSwipe.swift */; };
 		A7C41F561B865F0500120F80 /* ChooseCoin.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C41F551B865F0500120F80 /* ChooseCoin.swift */; };
 /* End PBXBuildFile section */
 
@@ -79,7 +78,6 @@
 		79A3DC3B1B842C1F007D0EDA /* BasketballAnswers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasketballAnswers.swift; sourceTree = "<group>"; };
 		79ABA1F51B8F90DB0046F1C6 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 		A767BAA31BBAEC6C00642290 /* BallsCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BallsCollectionViewController.swift; sourceTree = "<group>"; };
-		A79EA4061BBB4EEB008BC1B5 /* loadSwipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loadSwipe.swift; sourceTree = "<group>"; };
 		A7C41F551B865F0500120F80 /* ChooseCoin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseCoin.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -184,7 +182,6 @@
 				794DA0441B83579300F67F03 /* Balls.swift */,
 				794D609A1B86227800AACB2A /* BallTypes.swift */,
 				794DA0461B835BDF00F67F03 /* BallColors.swift */,
-				A79EA4061BBB4EEB008BC1B5 /* loadSwipe.swift */,
 			);
 			name = Utilitarios;
 			sourceTree = "<group>";
@@ -360,7 +357,6 @@
 				794D60971B860CB000AACB2A /* ChooseBall.swift in Sources */,
 				794DA0451B83579300F67F03 /* Balls.swift in Sources */,
 				5E79756F1B8225E20003DDA1 /* GameScene.swift in Sources */,
-				A79EA4071BBB4EEB008BC1B5 /* loadSwipe.swift in Sources */,
 				79A3DC3C1B842C1F007D0EDA /* BasketballAnswers.swift in Sources */,
 				5E231F741B84D20100A83447 /* Glass.swift in Sources */,
 				A767BAA41BBAEC6C00642290 /* BallsCollectionViewController.swift in Sources */,
