@@ -34,6 +34,7 @@ class BallsCollectionViewController: UICollectionViewController
     override func didReceiveMemoryWarning()
     {
         super.didReceiveMemoryWarning()
+        print("Problema de memoria")
     }
     
     // número de collections que serão retornadas

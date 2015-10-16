@@ -59,8 +59,6 @@ class GameScene: SKScene
         glass!.name = glassInstance.getGlassName(1)
         glass!.zPosition = 97
         
-        let physic = Physics()
-        glass!.physicsBody = physic.getGlass(1, withSize: glass!.frame.height)
         addChild(glass!)
     }
     
@@ -94,8 +92,6 @@ class GameScene: SKScene
         answerBox!.name = boxInstance.getTriangleName(1)
         answerBox!.zPosition = 99
         
-        let physic = Physics()
-        answerBox!.physicsBody = physic.getAnswerBox(1,withSize: answerBox!.frame.height)
         
         addChild(answerBox!)
         

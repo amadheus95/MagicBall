@@ -22,7 +22,6 @@
 		5EDD1E191B83D0590096A780 /* RespostasTennis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDD1E181B83D0590096A780 /* RespostasTennis.swift */; };
 		5EDD1E1B1B83D24E0096A780 /* Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDD1E1A1B83D24E0096A780 /* Random.swift */; };
 		79258C0C1B9A1F1400AEBC7C /* GameCenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79258C0B1B9A1F1400AEBC7C /* GameCenterTest.swift */; };
-		794114B81BC6E9DB0098CD84 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 794114B71BC6E9DB0098CD84 /* StoreKit.framework */; };
 		794D60871B84D62D00AACB2A /* MagicBall.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 794D60851B84D62D00AACB2A /* MagicBall.xcdatamodeld */; };
 		794D608B1B84D7A500AACB2A /* MagicBall+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794D60891B84D7A500AACB2A /* MagicBall+CoreDataProperties.swift */; };
 		794D608C1B84D7A500AACB2A /* MagicBall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794D608A1B84D7A500AACB2A /* MagicBall.swift */; };
@@ -34,7 +33,6 @@
 		79ABA1F61B8F90DB0046F1C6 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79ABA1F51B8F90DB0046F1C6 /* GameKit.framework */; };
 		A767BAA41BBAEC6C00642290 /* BallsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A767BAA31BBAEC6C00642290 /* BallsCollectionViewController.swift */; };
 		A79EA4071BBB4EEB008BC1B5 /* loadSwipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79EA4061BBB4EEB008BC1B5 /* loadSwipe.swift */; };
-		A7B7BF831B866D9C00EBF33F /* Physics.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B7BF821B866D9C00EBF33F /* Physics.swift */; };
 		A7C41F561B865F0500120F80 /* ChooseCoin.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C41F551B865F0500120F80 /* ChooseCoin.swift */; };
 /* End PBXBuildFile section */
 
@@ -77,7 +75,6 @@
 		5EDD1E181B83D0590096A780 /* RespostasTennis.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RespostasTennis.swift; sourceTree = "<group>"; };
 		5EDD1E1A1B83D24E0096A780 /* Random.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Random.swift; sourceTree = "<group>"; };
 		79258C0B1B9A1F1400AEBC7C /* GameCenterTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameCenterTest.swift; sourceTree = "<group>"; };
-		794114B71BC6E9DB0098CD84 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		794D60861B84D62D00AACB2A /* MagicBall.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MagicBall.xcdatamodel; sourceTree = "<group>"; };
 		794D60891B84D7A500AACB2A /* MagicBall+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MagicBall+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		794D608A1B84D7A500AACB2A /* MagicBall.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagicBall.swift; sourceTree = "<group>"; };
@@ -90,7 +87,6 @@
 		79ABA2711B924C430046F1C6 /* MagicBall.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = MagicBall.entitlements; sourceTree = "<group>"; };
 		A767BAA31BBAEC6C00642290 /* BallsCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BallsCollectionViewController.swift; sourceTree = "<group>"; };
 		A79EA4061BBB4EEB008BC1B5 /* loadSwipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loadSwipe.swift; sourceTree = "<group>"; };
-		A7B7BF821B866D9C00EBF33F /* Physics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Physics.swift; sourceTree = "<group>"; };
 		A7C41F551B865F0500120F80 /* ChooseCoin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseCoin.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -100,7 +96,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				79ABA1F61B8F90DB0046F1C6 /* GameKit.framework in Frameworks */,
-				794114B81BC6E9DB0098CD84 /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,7 +119,6 @@
 		5E79755E1B8225E20003DDA1 = {
 			isa = PBXGroup;
 			children = (
-				794114B71BC6E9DB0098CD84 /* StoreKit.framework */,
 				79ABA1F51B8F90DB0046F1C6 /* GameKit.framework */,
 				5E7975691B8225E20003DDA1 /* MagicBall */,
 				5E7975821B8225E20003DDA1 /* MagicBallTests */,
@@ -194,7 +188,6 @@
 		5EDD1E1C1B83D2750096A780 /* Utilitarios */ = {
 			isa = PBXGroup;
 			children = (
-				A7B7BF821B866D9C00EBF33F /* Physics.swift */,
 				5E231F731B84D20100A83447 /* Glass.swift */,
 				5EDD1E1A1B83D24E0096A780 /* Random.swift */,
 				794DA0441B83579300F67F03 /* Balls.swift */,
@@ -304,12 +297,13 @@
 				TargetAttributes = {
 					5E7975661B8225E20003DDA1 = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = ZUD974TE3Q;
 						SystemCapabilities = {
 							com.apple.GameCenter = {
 								enabled = 1;
 							};
 							com.apple.InAppPurchase = {
-								enabled = 1;
+								enabled = 0;
 							};
 							com.apple.Keychain = {
 								enabled = 1;
@@ -402,7 +396,6 @@
 				5EDD1E141B83C2570096A780 /* RespostasGenericas.swift in Sources */,
 				5E79756B1B8225E20003DDA1 /* AppDelegate.swift in Sources */,
 				5EDD1E1B1B83D24E0096A780 /* Random.swift in Sources */,
-				A7B7BF831B866D9C00EBF33F /* Physics.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
