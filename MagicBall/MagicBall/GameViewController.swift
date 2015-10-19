@@ -108,15 +108,6 @@ class GameViewController: UIViewController {
                 // 2 Player is already euthenticated & logged in, load game center
                 self.gcEnabled = true
                 
-                // Get the default leaderboard ID
-//                localPlayer.loadDefaultLeaderboardIdentifierWithCompletionHandler({ (leaderboardIdentifer: String!, error: NSError!) -> Void in
-//                    if error != nil {
-//                        println(error)
-//                    } else {
-//                        self.gcDefaultLeaderBoard = leaderboardIdentifer
-//                    }
-//                })
-                
                 
             }
             else

@@ -23,18 +23,11 @@ class BallsCollectionViewController: UICollectionViewController
         array.append("8ball")
         array.append("tennis")
         array.append("basket")
-        array.append("Pizzy")
-        array.append("fogo1")
-        array.append("laranjita")
-        array.append("almondegados")
-        array.append("boladecristal")
-        array.append("bolinhodearroz")
     }
     
     override func didReceiveMemoryWarning()
     {
         super.didReceiveMemoryWarning()
-        print("Problema de memoria")
     }
     
     // número de collections que serão retornadas
