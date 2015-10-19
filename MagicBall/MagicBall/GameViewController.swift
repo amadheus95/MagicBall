@@ -37,6 +37,7 @@ class GameViewController: UIViewController {
         scene.scaleMode = .AspectFill
         scene.index = index
         skView.presentScene(scene)
+        
         authenticateLocalPlayer()
         
         notification()
